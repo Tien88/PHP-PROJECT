@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color:#DA2C32;
+   --light-color:#666;
+   --light-bg:#eee;
+   --white:#fff;
+   --black:#303030;
+   --border:.1rem solid var(--light-color);
+   --box-shodow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: 'Montserrat', sans-serif;
+   margin: 0; padding: 0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+}
+
+*::selection{
+   background-color: var(--main-color);
+   color: var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+}
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 10rem;
+}
+
+body{
+   background-color: var(--light-bg);
+}
+
+section{
+   padding: 3rem 2rem;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shodow);
+}
+
+#menu-btn {
+    font-size: 2.5rem;
+    color: var(--black);
+    display: none;
+}
+
+.header .nav-1 {
+    background: var(--black);
+}
+
+.header .nav-2 {
+    background: var(--white);
+}
+
+.header .nav .nav-1 .flex {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.header .nav-2 .flex {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header .nav .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .nav .flex .logo {
+    font-size: 2.5rem;
+    color: var(--white);
+}
+
+.header .nav .flex .logo i {
+    margin-right: .7rem;
+    color: var(--main-color);
+}
+
+.header .nav .flex ul {
+    list-style: none;
+}
+
+.header .nav .flex ul li {
+    float: left;
+    position: relative;
+}
+
+.header .nav .flex ul li a {
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    font-size: 1.8rem;
+    color: var(--black);
+    background-color: var(--white);
+}
+
+.header .nav .flex ul li a:hover {
+    color: var(--white);
+    background-color: var(--main-color);
+}
+
+.header .nav .flex ul li ul {
+    position: absolute;
+    left: 0;
+    width: 17rem;
+}
+
+.header .nav .flex ul li ul li {
+    width: 100%;
+}
+
+.header .nav .flex ul li ul li a {
+    display: none;
+}
+
+.header .nav .flex ul li:hover ul li a {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+    background-color: var(--black);
+}
+
+.footer .flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.footer .flex .box {
+    flex: 1 1 25rem;
+}
+
+.footer .flex .box a {
+    display: block;
+    font-size: 1.8rem;
+    padding: .5rem 0;
+}
+
+.footer .flex .box a i {
+    color: var(--main-color);
+}
+
+.footer .flex .box a span {
+    color: var(--white);
+}
+
+.footer .flex .box a:hover span {
+    color: var(--light-color);
+    text-decoration: underline;
+}
+
+.footer .flex .box:last-child a i {
+    margin-left: 1.5rem;
+}
+
+.footer .flex .box:first-child a i {
+    margin-right: 1.5rem;
+}
+
+.footer .flex .box:last-child {
+    text-align: right;
+}
+
+.footer .flex .box:nth-child(2) {
+    text-align: center;
+}
+
+.footer .credit {
+    padding: 3rem 2rem;
+    font-size: 2rem;
+    color: var(--black);
+    margin-top: 3rem;
+    border-top: var(--border);
+    text-align: center;
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
+
+
+
+
+/* media */
+
+@media (max-width:991px) {
+
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media (max-width:768px) {
+
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .haeder .nav .menu {
+        position: absolute;
+        top: 99%; left: 0; right: 0;
+        background: var(--white);
+        border-top: var(--border);
+        z-index: 10;
+        transition: .2s linear;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .header .nav .menu.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .header .nav .menu ul li {
+        position: relative;
+        width: 100%;
+    }
+
+    .header .nav .menu ul li ul{
+        position: relative;
+        width: 100%;
+    }
+
+    .header .nav .menu ul li ul li a {
+        padding-left: 4rem; 
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+}
+
+@media (max-width:450px) {
+
+    html {
+        font-size: 50%;
+    }
+    
+}
+
+
