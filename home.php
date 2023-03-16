@@ -15,6 +15,7 @@ include 'components/save_send.php';
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,15 +23,16 @@ include 'components/save_send.php';
     <title>Home</title>
 
     <!-- font awesome cdn link  -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<!-- header start -->
-<?php include 'components/user_header.php'; ?>
-<!-- header end -->
+    <!-- header start -->
+    <?php include 'components/user_header.php'; ?>
+    <!-- header end -->
 
 
 
@@ -43,20 +45,21 @@ include 'components/save_send.php';
 
 
 
-<!-- footer starts -->
+    <!-- footer starts -->
 
-<?php include 'components/footer.php'; ?>
+    <?php include 'components/footer.php'; ?>
 
-<!-- footer ends -->
+    <!-- footer ends -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
 
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
 
-<?php include 'components/message.php'; ?>
+    <?php include 'components/message.php'; ?>
 
 
 </body>
+
 </html>
