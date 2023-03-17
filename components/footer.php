@@ -3,9 +3,9 @@
     <section class="flex">
 
         <div class="box">
-            <a href="tel: 0868777781"><i class="fas fa-phone"></i><span>0868-7777-81</span></a>
-            <a href="tel: 0345678895"><i class="fas fa-phone"></i><span>0868-7777-81</span></a>
-            <a href="mailto:tmtien0103@gmail.com"><i class="fas fa-envelope"></i><span>0868-7777-81</span></a>
+            <a href="tel: 0868777781"><i class="fas fa-phone"></i><span>0868 7777 81</span></a>
+            <a href="tel: 0345678895"><i class="fas fa-phone"></i><span>0345678895</span></a>
+            <a href="mailto:tmtien0103@gmail.com"><i class="fas fa-envelope"></i><span>tmtien0103@gmail.com</span></a>
             <a href="#"><i class="fas fa-map-market-alt"></i><span>Ho Chi Minh - VietNam</span></a>
         </div>
 

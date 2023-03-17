@@ -98,10 +98,6 @@ include 'components/save_send.php';
             <p>already have an account? <a href="login.php">login now</a></p>
 
             <input type="submit" value="register new" name="submit" class="btn">
-
-
-
-
         </form>
     </section>
 

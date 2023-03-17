@@ -167,6 +167,12 @@ section{
     display: none;
 }
 
+.header .nav .flex ul li:hover ul li a {
+    display: block;
+}
+
+
+
 .form-container form{
     max-width: 50rem;
     margin: 0 auto;
@@ -208,10 +214,57 @@ section{
 }
 
 
+.property-form form {
+    background-color: var(--white);
+    box-shadow: var(--box-shodow);
+    padding: 2rem;
+}
 
+.property-form form h3 {
+    padding-bottom: 1rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
 
-.header .nav .flex ul li:hover ul li a {
-    display: block;
+.property-form form .checkbox,
+.property-form form .flex {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+}
+
+.property-form form .box {
+    flex: 1 1 40rem;
+}
+
+.property-form form .input {
+    width: 100%;
+    border: var(--border);
+    padding: 1.4rem;
+    margin: 1rem 0;
+    font-size: 1.8rem;
+    color: var(--black);
+}
+
+.property-form form p {
+    padding-top: 1rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+.property-form form p span {
+    color: var(--main-color);
+}
+
+.property-form form .checkbox {
+    padding-bottom: 1rem;
+}
+
+.property-form form .checkbox input[type="checkbox"] {
+    margin-right: 1rem;
+    cursor: pointer;
 }
 
 
