@@ -52,6 +52,25 @@ section{
    max-width: 1200px;
    margin: 0 auto;
 }
+
+.heading {
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 3rem;
+    color: var(--black);
+    text-transform: capitalize;
+}
+
+.empty {
+    background-color: var(--white);
+    box-shadow: var(--box-shodow);
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--main-color);
+}
+
+
 .btn,
 .inline-btn{
 
@@ -79,8 +98,15 @@ section{
 .inline-btn:hover{
 
     background-color: var(--black);
-
 }
+
+.flex-btn {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: space-between;
+}
+
+
 
 .header {
     position: sticky;
@@ -268,6 +294,71 @@ section{
 }
 
 
+.my-listings .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.my-listings .box-container .box {
+    background-color: var(--white);
+    box-shadow: var(--box-shodow);
+    padding: 2rem;
+}
+
+.my-listings .box-container .box .thumb {
+    position: relative;
+    height: 20rem;
+}
+
+.my-listings .box-container .box .thumb img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.my-listings .box-container .box .thumb p {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: rgba(0,0,0,.3);
+    padding: .7rem 1rem;
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.my-listings .box-container .box .thumb p i {
+    margin-right: .7rem;
+}
+
+.my-listings .box-container .box .price {
+    font-size: 2rem;
+    color: var(--main-color);
+    padding-bottom: .5rem;
+}
+
+.my-listings .box-container .box .price i {
+    margin-right: 1rem;
+}
+
+.my-listings .box-container .box .name {
+    font-size: 1.8rem;
+    padding: .5rem 0;
+    color: var(--black);
+}
+
+.my-listings .box-container .box .address {
+    font-size: 1.7rem;
+    color: var(--light-color);
+}
+
+.my-listings .box-container .box .address i {
+    margin-right: 1rem;
+    color: var(--main-color);
+    padding: 1rem 0;
+}
 
 
 
