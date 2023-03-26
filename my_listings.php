@@ -6,6 +6,52 @@ if(isset($_COOKIE['user_id'])){
    $user_id = $_COOKIE['user_id'];
 }else{
    $user_id = '';
+   header('location:login.php');
+}
+
+if(isset($_POST['delete'])){
+
+    $delete_id = $_POST['property_id'];
+    $delete_id = filter_var($delete_id, FILTER_SANITIZE_STRING);
+
+    $verify_delete = $conn->prepare("SELECT * FROM `property` WHERE id = ?");
+    $verify_delete->execute([$delete_id]);
+
+    if($verify_delete->rowCount() > 0){
+        $select_images = $conn->prepare("SELECT * FROM `property` WHERE id = ? LIMIT 1");
+        $select_images->execute([$delete_id]);
+        $fetch_images = $select_images->fetch(PDO::FETCH_ASSOC);
+        $delete_image_01 = $fetch_images['image_01'];
+        $delete_image_02 = $fetch_images['image_02'];
+        $delete_image_03 = $fetch_images['image_03'];
+        $delete_image_04 = $fetch_images['image_04'];
+        $delete_image_05 = $fetch_images['image_05'];
+
+        unlink('uploaded_files/'.$delete_image_01);
+
+        if(!empty($delete_image_02)){
+            unlink('uploaded_files/'.$delete_image_02);
+        }
+        if(!empty($delete_image_03)){
+            unlink('uploaded_files/'.$delete_image_03);
+        }
+        if(!empty($delete_image_04)){
+            unlink('uploaded_files/'.$delete_image_04);
+        }
+        if(!empty($delete_image_05)){
+            unlink('uploaded_files/'.$delete_image_05);
+        }
+
+        $delete_saved = $conn->prepare("DELETE FROM `saved` WHERE property_id = ?");
+        $delete_saved->execute([$delete_id]);
+        $delete_requests = $conn->prepare("DELETE FROM `requests` WHERE property_id = ?");
+        $delete_requests->execute([$delete_id]);
+        $delete_listing = $conn->prepare("DELETE FROM `property` WHERE id = ?");
+        $delete_listing->execute([$delete_id]);
+        $success_msg[] = 'listing deleted!';
+    }else {
+        $warning_msg[] = 'listing deleted already!';
+    }
 }
 
 
