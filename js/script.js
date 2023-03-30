@@ -19,4 +19,10 @@ document.querySelectorAll('.faq .box-container .box h3').forEach(headings =>{
     headings.onclick = () =>{
        headings.parentElement.classList.toggle('active');
     }
- });
+});
+
+document.querySelectorAll('..faq .box-container .box h3').forEach(headings =>{
+    heading.onclick = () =>{
+        heading.parentElement.classList.toggle('active');
+    }
+})
