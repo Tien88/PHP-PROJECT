@@ -1137,6 +1137,36 @@ section{
     overflow-x: hidden;
     text-overflow: ellipsis;
  }
-
+ .requests .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+ }
+ 
+ .requests .box-container .box{
+    background-color: var(--white);
+    padding: 2rem;
+    padding-top: 1rem;
+    box-shadow: var(--box-shodow);
+ }
+ 
+ .requests .box-container .box p{
+    padding: .5rem 0;
+    line-height: 1.5;
+    font-size: 1.8rem;
+    color: var(--black);
+ }
+ 
+ .requests .box-container .box p span,
+ .requests .box-container .box p a{
+    color: var(--light-color);
+ }
+ 
+ .requests .box-container .box p a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+ }
 
 
