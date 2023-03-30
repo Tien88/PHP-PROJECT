@@ -378,99 +378,99 @@ section{
     background:url('../images/home-bg.jpg') no-repeat;
     background-size: cover;
     background-position: center;
- }
+}
  
- .home .center{
+.home .center{
     min-height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
- }
+}
  
- .home .center form{
+.home .center form{
     background-color: var(--white);
     padding: 2rem;
     box-shadow: var(--box-shodow);
     width: 50rem;
- }
+}
  
- .home .center form h3{
+.home .center form h3{
     padding-bottom: 1rem;
     text-align: center;
     color: var(--black);
     text-transform: capitalize;
     font-size: 2.5rem;
- }
+}
  
- .home .center form .flex{
+.home .center form .flex{
     display: flex;
     gap:1rem;
     flex-wrap: wrap;
- }
+}
  
- .home .center form .box{
+.home .center form .box{
     flex: 1 1 20rem;
- }
+}
  
- .home .center form .box .input{
+.home .center form .box .input{
     width: 100%;
     border: var(--border);
     padding: 1.4rem;
     color: var(--black);
     font-size: 1.8rem;
     margin: 1rem 0;
- }
+}
  
- .home .center form .box p{
+.home .center form .box p{
     color: var(--light-color);
     font-size: 1.7rem;
     padding-top: 1rem;
- }
+}
  
- .home .center form .box p span{
+.home .center form .box p span{
     color: var(--main-color);
- }
+}
 
- .services .box-container{
+.services .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, 30rem);
     gap: 2rem;
     justify-content: center;
     align-items: flex-start;
- }
+}
  
- .services .box-container .box{
+.services .box-container .box{
     background-color: var(--white);
     box-shadow: var(--box-shodow);
     padding: 2rem;
     text-align: center;
- }
+}
  
- .services .box-container .box img{
+.services .box-container .box img{
     margin: 1rem 0;
     height: 8rem;
- }
+}
  
- .services .box-container .box h3{
+.services .box-container .box h3{
     font-size: 2rem;
     padding: 1rem 0;
     color: var(--black);
     text-transform: capitalize;
- }
+}
  
- .services .box-container .box p{
+.services .box-container .box p{
     line-height: 2;
     font-size: 1.6rem;
     color: var(--light-color);
     padding-top: .5rem;
- }
+}
 
- .listings .box-container{
+.listings .box-container{
     display: grid;
     row-gap: 2rem;
- }
+}
  
- .listings .box-container form{
+.listings .box-container form{
     background-color: var(--white);
     box-shadow: var(--box-shodow);
     padding: 2rem;
@@ -478,73 +478,73 @@ section{
     gap: 2rem;
     flex-wrap: wrap;
     align-items: center;
- }
+}
  
- .listings .box-container form .box{
+.listings .box-container form .box{
     flex: 1 1 40rem;
     overflow-x: hidden;
- }
+}
  
- .listings .box-container form .box .thumb{
+.listings .box-container form .box .thumb{
     height: 30rem;
     position: relative;
     margin: 1.5rem 0;
- }
+}
  
- .listings .box-container form .box .thumb img{
+.listings .box-container form .box .thumb img{
     height: 100%;
     width: 100%;
     object-fit: cover;
- }
+}
  
- .listings .box-container form .box .save{
+.listings .box-container form .box .save{
     padding: 1rem 3rem;
     background-color: var(--light-bg);
     font-size: 1.8rem;
     cursor: pointer;
- }
+}
  
- .listings .box-container form .box .save i{
+.listings .box-container form .box .save i{
     margin-right: 1rem;
     color: var(--black);
- }
+}
  
- .listings .box-container form .box .save span{
+.listings .box-container form .box .save span{
     color: var(--light-color);
- }
+}
  
- .listings .box-container form .box .save:hover{
+.listings .box-container form .box .save:hover{
     background-color: var(--main-color);
- }
+}
  
- .listings .box-container form .box .save:hover i{
+.listings .box-container form .box .save:hover i{
     color: var(--white);
- }
+}
  
- .listings .box-container form .box .save:hover span{
+.listings .box-container form .box .save:hover span{
     color: var(--white);
- }
+}
  
- .listings .box-container form .box .thumb .total-images{
+.listings .box-container form .box .thumb .total-images{
     position: absolute;
     top: 1rem; left: 1rem;
     background-color: rgba(0,0,0,.3);
     color: var(--white);
     padding:.5rem 1rem;
     font-size: 1.7rem;
- }
+}
  
- .listings .box-container form .box .thumb .total-images i{
+.listings .box-container form .box .thumb .total-images i{
     margin-right: .8rem;
- }
+}
  
- .listings .box-container form .box .admin{
+.listings .box-container form .box .admin{
     display: flex;
     align-items: center;
     gap: 1rem;
- }
+}
  
- .listings .box-container form .box .admin h3{
+.listings .box-container form .box .admin h3{
     height: 4.5rem;
     line-height: 4.4rem;
     width: 4.5rem;
@@ -554,48 +554,48 @@ section{
     background-color: var(--light-bg);
     text-align:center;
     text-transform: uppercase;
- }
+}
  
- .listings .box-container form .box .admin p{
+.listings .box-container form .box .admin p{
     padding-bottom: .3rem;
     color: var(--black);
     font-size: 1.7rem;
- }
+}
  
- .listings .box-container form .box .admin span{
+.listings .box-container form .box .admin span{
     color: var(--light-color);
     font-size: 1.5rem;
- }
+}
  
- .listings .box-container form .box .price{
+.listings .box-container form .box .price{
     font-size: 2rem;
     color: var(--main-color);
- }
+}
  
- .listings .box-container form .box .price i{
+.listings .box-container form .box .price i{
     margin-right: .8rem;
- }
+}
  
- .listings .box-container form .box .name{
+.listings .box-container form .box .name{
     font-size: 2rem;
     padding: 1rem 0;
     color: var(--black);
     line-height: 1.5;
     text-overflow: ellipsis;
- }
+}
  
- .listings .box-container form .box .location{
+.listings .box-container form .box .location{
     font-size: 1.7rem;
     color: var(--light-color);
     padding-bottom: 1rem;
- }
+}
  
- .listings .box-container form .box .location i{
+.listings .box-container form .box .location i{
     margin-right: 1rem;
     color: var(--main-color);
- }
+}
  
- .listings .box-container form .box .flex{
+.listings .box-container form .box .flex{
     margin: 1rem 0;
     background-color: var(--light-bg);
     padding: 1.5rem;
@@ -603,24 +603,147 @@ section{
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 2rem;
- }
+}
  
- .listings .box-container form .box .flex p{
+.listings .box-container form .box .flex p{
     font-size: 1.7rem;
     flex: 1 1 20rem;
- }
+}
  
- .listings .box-container form .box .flex p i{
+.listings .box-container form .box .flex p i{
     color: var(--main-color);
     margin-right: .8rem;
+}
+ 
+.listings .box-container form .box .flex p span{
+    color: var(--light-color);
+}
+
+
+
+
+
+
+/* About us */
+.about .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
  }
  
- .listings .box-container form .box .flex p span{
+ .about .row .image{
+    flex: 1 1 40rem;
+ }
+ 
+ .about .row .image img{
+    width: 100%;
+ }
+ 
+ .about .row .content{
+    flex: 1 1 40rem;
+    text-align: center;
+ }
+ 
+ .about .row .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+ }
+ 
+ .about .row .content p{
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1.7rem;
     color: var(--light-color);
  }
 
-/* filter */
+/* About us */
 
+
+/* Step */
+.steps .box-container .box{
+    background-color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--box-shodow);
+}
+ 
+.steps .box-container .box img{
+    height: 7rem;
+    margin: .5rem 0;
+}
+ 
+.steps .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: var(--black);
+}
+ 
+.steps .box-container .box p{
+    line-height: 2;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+/* Step */
+
+
+/* Review */
+
+.reviews .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 2rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+ 
+.reviews .box-container .box{
+    background-color: var(--white);
+    padding: 2rem;
+    box-shadow: var(--box-shodow);
+}
+ 
+.reviews .box-container .box .user{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+ 
+.reviews .box-container .box .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+}
+ 
+.reviews .box-container .box .user h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-bottom: .3rem;
+}
+ 
+.reviews .box-container .box .user .stars i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+ 
+.reviews .box-container .box p{
+    line-height: 2;
+    padding-top: .5rem;
+    font-size: 1.6rem;
+    color: var(--light-color);
+}
+
+/* Review */
+
+
+
+
+
+/* filter */
 .filters form{
     background-color: var(--white);
     box-shadow: var(--box-shodow);
@@ -694,8 +817,7 @@ section{
     background-color: var(--main-color);
     display: none;
  }
-
-
+/* filter */
 
 
 

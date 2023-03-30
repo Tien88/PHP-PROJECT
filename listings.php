@@ -41,9 +41,10 @@ include 'components/save_send.php';
         <h1 class="heading">latest listings</h1>
 
         <div class="box-container">
-            <?php
+         
+      <?php
          $total_images = 0;
-         $select_properties = $conn->prepare("SELECT * FROM `property` ORDER BY date DESC LIMIT 6");
+         $select_properties = $conn->prepare("SELECT * FROM `property` ORDER BY date DESC");
          $select_properties->execute();
          if($select_properties->rowCount() > 0){
             while($fetch_property = $select_properties->fetch(PDO::FETCH_ASSOC)){
@@ -82,17 +83,17 @@ include 'components/save_send.php';
             <form action="" method="POST">
                 <div class="box">
                     <input type="hidden" name="property_id" value="<?= $fetch_property['id']; ?>">
-                    <?php
+            <?php
                if($select_saved->rowCount() > 0){
             ?>
                     <button type="submit" name="save" class="save"><i
                             class="fas fa-heart"></i><span>saved</span></button>
-                    <?php
+            <?php
                }else{ 
             ?>
                     <button type="submit" name="save" class="save"><i
                             class="far fa-heart"></i><span>save</span></button>
-                    <?php
+            <?php
                }
             ?>
                     <div class="thumb">
@@ -127,7 +128,7 @@ include 'components/save_send.php';
                     </div>
                 </div>
             </form>
-            <?php
+      <?php
          }
       }else{
          echo '<p class="empty">no properties added yet! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
