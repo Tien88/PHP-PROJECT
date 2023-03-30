@@ -82,7 +82,7 @@ include 'components/save_send.php';
 
 <section class="my-listings">
 
-    <h1 class="heading">My Listings</h1>
+    <h1 class="heading">Danh Sách Của Tôi</h1>
 
     <div class="box-container">
 

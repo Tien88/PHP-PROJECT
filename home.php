@@ -43,31 +43,31 @@ include 'components/save_send.php';
         <section class="center">
 
             <form action="search.php" method="post">
-                <h3>find your perfect home</h3>
+                <h3>Tìm Ngôi Nhà Hoàn Hảo Của Bạn</h3>
                 <div class="box">
-                    <p>enter location <span>*</span></p>
-                    <input type="text" name="h_location" required maxlength="100" placeholder="enter city name"
+                    <p>Nhập Địa Chỉ <span>*</span></p>
+                    <input type="text" name="h_location" required maxlength="100" placeholder="Nhập Tên Thành Phố"
                         class="input">
                 </div>
                 <div class="flex">
                     <div class="box">
-                        <p>property type <span>*</span></p>
+                        <p>Loại Hình Tài Sản<span>*</span></p>
                         <select name="h_type" class="input" required>
-                            <option value="flat">flat</option>
-                            <option value="house">house</option>
-                            <option value="shop">shop</option>
+                            <option value="flat">Mặt Bằng</option>
+                            <option value="house">Nhà Phố</option>
+                            <option value="shop">Cửa Hàng</option>
                         </select>
                     </div>
                     <div class="box">
-                        <p>offer type <span>*</span></p>
+                        <p>Loại Ưu Đãi<span>*</span></p>
                         <select name="h_offer" class="input" required>
-                            <option value="sale">sale</option>
-                            <option value="resale">resale</option>
-                            <option value="rent">rent</option>
+                            <option value="sale">Khuyến Mãi</option>
+                            <option value="resale">Không Khuyến Mãi</option>
+                            <option value="rent">Cho Thuê</option>
                         </select>
                     </div>
                     <div class="box">
-                        <p>maximum budget <span>*</span></p>
+                        <p>Ngân Sách Tối Đa <span>*</span></p>
                         <select name="h_min" class="input" required>
                             <option value="5000">5k</option>
                             <option value="10000">10k</option>
@@ -104,37 +104,37 @@ include 'components/save_send.php';
                         </select>
                     </div>
                     <div class="box">
-                        <p>maximum budget <span>*</span></p>
+                        <p>Ngân Sách Tối Thiểu <span>*</span></p>
                         <select name="h_max" class="input" required>
-                            <option value="5000">5k</option>
-                            <option value="10000">10k</option>
-                            <option value="15000">15k</option>
-                            <option value="20000">20k</option>
-                            <option value="30000">30k</option>
-                            <option value="40000">40k</option>
-                            <option value="40000">40k</option>
-                            <option value="50000">50k</option>
-                            <option value="100000">1 lac</option>
-                            <option value="500000">5 lac</option>
-                            <option value="1000000">10 lac</option>
-                            <option value="2000000">20 lac</option>
-                            <option value="3000000">30 lac</option>
-                            <option value="4000000">40 lac</option>
-                            <option value="4000000">40 lac</option>
-                            <option value="5000000">50 lac</option>
-                            <option value="6000000">60 lac</option>
-                            <option value="7000000">70 lac</option>
-                            <option value="8000000">80 lac</option>
-                            <option value="9000000">90 lac</option>
-                            <option value="10000000">1 Cr</option>
-                            <option value="20000000">2 Cr</option>
-                            <option value="30000000">3 Cr</option>
-                            <option value="40000000">4 Cr</option>
-                            <option value="50000000">5 Cr</option>
-                            <option value="60000000">6 Cr</option>
-                            <option value="70000000">7 Cr</option>
-                            <option value="80000000">8 Cr</option>
-                            <option value="90000000">9 Cr</option>
+                            <option value="5000">5 triệu</option>
+                            <option value="10000">10 triệu</option>
+                            <option value="15000">15 triệu</option>
+                            <option value="20000">20 triệu</option>
+                            <option value="30000">30 triệu</option>
+                            <option value="40000">40 triệu</option>
+                            <option value="40000">40 triệu</option>
+                            <option value="50000">50 triệu</option>
+                            <option value="100000">1 triệu</option>
+                            <option value="500000">5 triệu</option>
+                            <option value="1000000">10 triệu</option>
+                            <option value="2000000">20 triệu</option>
+                            <option value="3000000">30 triệu</option>
+                            <option value="4000000">40 triệu</option>
+                            <option value="4000000">40 triệu</option>
+                            <option value="5000000">50 triệu</option>
+                            <option value="6000000">60 triệu</option>
+                            <option value="7000000">70 triệu</option>
+                            <option value="8000000">80 triệu</option>
+                            <option value="9000000">90 triệu</option>
+                            <option value="10000000">1 trăm triệu</option>
+                            <option value="20000000">2 trăm triệu</option>
+                            <option value="30000000">3 trăm triệu</option>
+                            <option value="40000000">4 trăm triệu</option>
+                            <option value="50000000">5 trăm triệu</option>
+                            <option value="60000000">6 trăm triệu</option>
+                            <option value="70000000">7 trăm triệu</option>
+                            <option value="80000000">8 trăm triệu</option>
+                            <option value="90000000">9 trăm triệu</option>
                             <option value="100000000">10 Cr</option>
                             <option value="150000000">15 Cr</option>
                             <option value="200000000">20 Cr</option>
@@ -161,38 +161,38 @@ include 'components/save_send.php';
 
             <div class="box">
                 <img src="images/icon-1.png" alt="">
-                <h3>buy house</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+                <h3>Mua Nhà</h3>
+                <p>Hãy Lựa Chọn Căn Nhà Yêu Thích Của Bạn</p>
             </div>
 
             <div class="box">
                 <img src="images/icon-2.png" alt="">
-                <h3>rent house</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+                <h3>Nhà Cho Thuê</h3>
+                <p>Hãy Lựa Chon Căn Nhà Cho Thuê Phù Hợp Với Bạn</p>
             </div>
 
             <div class="box">
                 <img src="images/icon-3.png" alt="">
-                <h3>sell house</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+                <h3>Bán Nhà</h3>
+                <p>Hãy Đăng Những Loại Tài Sản Bạn Cần Bán</p>
             </div>
 
             <div class="box">
                 <img src="images/icon-4.png" alt="">
-                <h3>flats and buildings</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+                <h3>Căn Hộ và Tòa Nhà</h3>
+                <p>Hãy Lựa Chọn Căn Hộ Và Tòa Nhà Bạn Yêu Thích</p>
             </div>
 
             <div class="box">
                 <img src="images/icon-5.png" alt="">
-                <h3>shops and malls</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+                <h3>Cửa Hàng</h3>
+                <p>Hãy đăng Cửa Hàng Mà Bạn Muốn Bán</p>
             </div>
 
             <div class="box">
                 <img src="images/icon-6.png" alt="">
-                <h3>24/7 service</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque, incidunt.</p>
+                <h3>Dịch Vụ 24/7</h3>
+                <p>Hãy Liên Hệ Với Chúng Tôi Khi Cần Giúp Đỡ</p>
             </div>
 
         </div>

@@ -259,71 +259,71 @@ include 'components/save_send.php';
 <section class="property-form">
 
     <form action="" method="post" enctype="multipart/form-data">
-        <h3>Property Details</h3>
+        <h3>Danh Sách Tài Sản</h3>
         <div class="box">
-            <p>Property Name <span>*</span></p>
-            <input type="text" name="property_name" maxlength="50" required placeholder="Enter Property Name"class="input">
+            <p>Tên Tài Sản <span>*</span></p>
+            <input type="text" name="property_name" maxlength="50" required placeholder="Nhập Tên Tài Sản"class="input">
         </div>
         <div class="flex">
             <div class="box">
-                <p>Property Price <span>*</span></p>
-                <input type="number" name="price" maxlength="10" min="0" max="9999999999" required placeholder="Enter Property Price"class="input">
+                <p>Giá Của Tài Sản <span>*</span></p>
+                <input type="number" name="price" maxlength="10" min="0" max="9999999999" required placeholder="Nhập giá của tài sản"class="input">
             </div>
             <div class="box">
-                <p>Deposite Amount <span>*</span></p>
-                <input type="number" name="deposite" maxlength="10" min="0" max="9999999999" required placeholder="Enter Property Price"class="input">
+                <p>Mức Đặt Cọc <span>*</span></p>
+                <input type="number" name="deposite" maxlength="10" min="0" max="9999999999" required placeholder="Nhập mức giá đặt cọc"class="input">
             </div>
             <div class="box">
-                <p>Property Address <span>*</span></p>
-                <input type="text" name="address" maxlength="100" required placeholder="Enter Property Address"class="input">
+                <p>Địa Chỉ Tài Sản <span>*</span></p>
+                <input type="text" name="address" maxlength="100" required placeholder="Nhập Địa Chỉ Tài Sản"class="input">
             </div>
             <div class="box">
-                <p>Offer Type<span>*</span></p>
+                <p>Loại Ưu Đãi<span>*</span></p>
                 <select name="offer" required class="input">
-                    <option value="sale">sale</option>
-                    <option value="resale">resale</option>
-                    <option value="rent">rent</option>
+                    <option value="sale">Bán Trả Góp</option>
+                    <option value="resale">Bán Lại</option>
+                    <option value="rent">Cho Thuê</option>
                 </select>
             </div>
             <div class="box">
-                <p>Property Type<span>*</span></p>
+                <p>Loại Hình Tài Sản<span>*</span></p>
                 <select name="type" required class="input">
-                    <option value="flat">flat</option>
-                    <option value="house">house</option>
-                    <option value="shop">shop</option>
+                    <option value="flat">Mặt Bằng</option>
+                    <option value="house">Nhà Phố</option>
+                    <option value="shop">Cửa Hàng</option>
                 </select>
             </div>
             <div class="box">
-                <p>Property Status<span>*</span></p>
+                <p>Tình Trạng Tài Sản<span>*</span></p>
                 <select name="status" required class="input">
-                    <option value="ready to move">ready to move</option>
-                    <option value="under construction">under construction</option>
+                    <option value="ready to move">Vào Ở Ngay</option>
+                    <option value="under construction">Đang Xây Dựng</option>
                 </select>
             </div>
             <div class="box">
-                <p>Furnished Status<span>*</span></p>
+                <p>Tình Trạng Nội Thất<span>*</span></p>
                 <select name="furnished" required class="input">
-                    <option value="furnished">furnished</option>
-                    <option value="semi-furnished">semi-furnished</option>
-                    <option value="unfurnished">unfurnished</option>
+                    <option value="furnished">Đã Trang bị</option>
+                    <option value="semi-furnished">Bán Nội Thất</option>
+                    <option value="unfurnished">Không Có Nội Thất</option>
                 </select>
             </div>
             <div class="box">
-                <p>How many BHK<span>*</span></p>
+                <p>Bao Nhiêu Phòng Bếp<span>*</span></p>
                 <select name="bhk" required class="input">
-                    <option value="1">1 BHK</option>
-                    <option value="2">2 BHK</option>
-                    <option value="3">3 BHK</option>
-                    <option value="4">4 BHK</option>
-                    <option value="5">5 BHK</option>
-                    <option value="6">6 BHK</option>
-                    <option value="7">7 BHK</option>
-                    <option value="8">8 BHK</option>
-                    <option value="9">9 BHK</option>
+                    <option value="1">1 Bếp</option>
+                    <option value="2">2 Bếp</option>
+                    <option value="3">3 Bếp</option>
+                    <option value="4">4 Bếp</option>
+                    <option value="5">5 Bếp</option>
+                    <option value="6">6 Bếp</option>
+                    <option value="7">7 Bếp</option>
+                    <option value="8">8 Bếp</option>
+                    <option value="9">9 Bếp</option>
                 </select>
             </div>
             <div class="box">
-                <p>How many bedrooms<span>*</span></p>
+                <p>Bao Nhiêu Phòng Ngủ<span>*</span></p>
                 <select name="bedroom" required class="input">
                     <option value="1">1 bedroom</option>
                     <option value="2">2 bedrooms</option>
@@ -337,78 +337,78 @@ include 'components/save_send.php';
                 </select>
             </div>
             <div class="box">
-                <p>How many bathrooms<span>*</span></p>
+                <p>Bao Nhiêu Phòng Tắm<span>*</span></p>
                 <select name="bathroom" required class="input">
-                    <option value="1">1 bathroom</option>
-                    <option value="2">2 bathrooms</option>
-                    <option value="3">3 bathrooms</option>
-                    <option value="4">4 bathrooms</option>
-                    <option value="5">5 bathrooms</option>
-                    <option value="6">6 bathrooms</option>
-                    <option value="7">7 bathrooms</option>
-                    <option value="8">8 bathrooms</option>
-                    <option value="9">9 bathrooms</option>
+                    <option value="1">1 Phòng Tắm</option>
+                    <option value="2">2 Phòng Tắm</option>
+                    <option value="3">3 Phòng Tắm</option>
+                    <option value="4">4 Phòng Tắm</option>
+                    <option value="5">5 Phòng Tắm</option>
+                    <option value="6">6 Phòng Tắm</option>
+                    <option value="7">7 Phòng Tắm</option>
+                    <option value="8">8 Phòng Tắm</option>
+                    <option value="9">9 Phòng Tắm</option>
                 </select>
             </div>
             <div class="box">
-                <p>How many balconys<span>*</span></p>
+                <p>Bao Nhiêu Ban Công<span>*</span></p>
                 <select name="balcony" class="input" required>
-                    <option value="0">0 balcony</option>
-                    <option value="1">1 balcony</option>
-                    <option value="2">2 balcony</option>
-                    <option value="3">3 balcony</option>
-                    <option value="4">4 balcony</option>
-                    <option value="5">5 balcony</option>
-                    <option value="6">6 balcony</option>
-                    <option value="7">7 balcony</option>
-                    <option value="8">8 balcony</option>
-                    <option value="9">9 balcony</option>
+                    <option value="0">0 Ban Công</option>
+                    <option value="1">1 Ban Công</option>
+                    <option value="2">2 Ban Công</option>
+                    <option value="3">3 Ban Công</option>
+                    <option value="4">4 Ban Công</option>
+                    <option value="5">5 Ban Công</option>
+                    <option value="6">6 Ban Công</option>
+                    <option value="7">7 Ban Công</option>
+                    <option value="8">8 Ban Công</option>
+                    <option value="9">9 Ban Công</option>
                 </select>
             </div>
             <div class="box">
-                <p>Carpet Area<span>*</span></p>
-                <input type="number" name="carpet" maxlength="10" min="0" max="9999999999" required placeholder="How May Squarefits"class="input">
+                <p>Diện Tích Sàn<span>*</span></p>
+                <input type="number" name="carpet" maxlength="10" min="0" max="9999999999" required placeholder="Bao Nhiêu Mét Vuông"class="input">
             </div>
             <div class="box">
-                <p>Property Age<span>*</span></p>
-                <input type="number" name="age" maxlength="2" min="0" max="99" required placeholder="How Old Is Property"class="input">
+                <p>Tuổi Đời Tài Sản<span>*</span></p>
+                <input type="number" name="age" maxlength="2" min="0" max="99" required placeholder="Tuổi Tài Sản là bao nhiêu"class="input">
             </div>
             <div class="box">
-                <p>Total Floors<span>*</span></p>
-                <input type="number" name="total_floors" maxlength="2" min="0" max="99" required placeholder="How many floors"class="input">
+                <p>Tổng Số Tầng<span>*</span></p>
+                <input type="number" name="total_floors" maxlength="2" min="0" max="99" required placeholder="Có Bao Nhiêu Lầu"class="input">
             </div>
             <div class="box">
-                <p>Room Floor<span>*</span></p>
-                <input type="number" name="room_floor" maxlength="2" min="0" max="99" required placeholder="Property floor number"class="input">
+                <p>Tầng Phòng<span>*</span></p>
+                <input type="number" name="room_floor" maxlength="2" min="0" max="99" required placeholder="Số Tầng của Căn Hộ"class="input">
             </div>
             <div class="box">
-                <p>loan<span>*</span></p>
+                <p>Khoảng Vay<span>*</span></p>
                 <select name="loan" required class="input">
-                    <option value="available">available</option>
-                    <option value="not available">not available</option>
+                    <option value="available">Có Sẵn</option>
+                    <option value="not available">Không có Sẵn</option>
                 </select>
             </div>
         </div>
         <div class="box">
-            <p>Property Description<span>*</span></p>
-            <textarea name="description" id="" cols="30" rows="10" maxlength="1000" require placeholder="enter property description" class="input"></textarea>
+            <p>Mô Tả Về Tài Sản<span>*</span></p>
+            <textarea name="description" id="" cols="30" rows="10" maxlength="1000" require placeholder="Nhập Mô Tả Về Tài Sản" class="input"></textarea>
         </div>
         <div class="checkbox">
             <div class="box">
-                <p><input type="checkbox" name="lift" value="yes"/>Lifts</p>
-                <p><input type="checkbox" name="security_guard" value="yes"/>Security Guard</p>
-                <p><input type="checkbox" name="play_ground" value="yes"/>Play Ground</p>
-                <p><input type="checkbox" name="garden" value="yes"/>Garden</p>
-                <p><input type="checkbox" name="water_supply" value="yes"/>Water Supply</p>
-                <p><input type="checkbox" name="power_backup" value="yes"/>Power Backup</p>
+                <p><input type="checkbox" name="lift" value="yes"/>Thang Máy</p>
+                <p><input type="checkbox" name="security_guard" value="yes"/>Nhân Viên Bảo Vệ</p>
+                <p><input type="checkbox" name="play_ground" value="yes"/>Sân Chơi</p>
+                <p><input type="checkbox" name="garden" value="yes"/>Vườn</p>
+                <p><input type="checkbox" name="water_supply" value="yes"/>Cung Cấp Nước</p>
+                <p><input type="checkbox" name="power_backup" value="yes"/>Năng Lượng Dự Phòng</p>
             </div>
             <div class="box">
-                <p><input type="checkbox" name="parking_area" value="yes"/>Parking_area</p>
-                <p><input type="checkbox" name="gym" value="yes"/>gym</p>
-                <p><input type="checkbox" name="shopping_mall" value="yes"/>shopping_mall</p>
-                <p><input type="checkbox" name="hospital" value="yes"/>hospital</p>
-                <p><input type="checkbox" name="school" value="yes"/>school</p>
-                <p><input type="checkbox" name="market_area" value="yes"/>market_area</p>
+                <p><input type="checkbox" name="parking_area" value="yes"/>Bãi Đậu Xe</p>
+                <p><input type="checkbox" name="gym" value="yes"/>GYM</p>
+                <p><input type="checkbox" name="shopping_mall" value="yes"/>Trung Tâm Mua Sắm</p>
+                <p><input type="checkbox" name="hospital" value="yes"/>Bệnh Viện</p>
+                <p><input type="checkbox" name="school" value="yes"/>Trường Học</p>
+                <p><input type="checkbox" name="market_area" value="yes"/>Cửa Hàng Mua Sắm</p>
             </div>
         </div>
         <div class="box">
