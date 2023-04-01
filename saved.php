@@ -117,10 +117,10 @@ include 'components/save_send.php';
                 <p><i class="fas fa-bed"></i><span><?= $fetch_property['bhk']; ?> BHK</span></p>
                 <p><i class="fas fa-trowel"></i><span><?= $fetch_property['status']; ?></span></p>
                 <p><i class="fas fa-couch"></i><span><?= $fetch_property['furnished']; ?></span></p>
-                <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>sqft</span></p>
+                <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>Mét Vuông</span></p>
             </div>
             <div class="flex-btn">
-                <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
+                <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">Xem Tài Sản</a>
                 <input type="submit" value="send enquiry" name="send" class="btn">
             </div>
         </div>
@@ -128,11 +128,11 @@ include 'components/save_send.php';
     <?php
             }
         }else{
-            echo '<p class="empty">no properties added yet! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
+            echo '<p class="empty">Chưa Có Tài Sản Thêm Vào! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">Thêm Mới</a></p>';
         }
             }
         }else{
-        echo '<p class="empty">no properties saved yet! <a href="listings.php" style="margin-top:1.5rem;" class="btn">discover more</a></p>';
+        echo '<p class="empty">Chưa Có Tài Sản Đã Lưu! <a href="listings.php" style="margin-top:1.5rem;" class="btn">Xem Thêm Nhiều Hơn</a></p>';
         }
    ?>
    

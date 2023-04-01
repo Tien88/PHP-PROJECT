@@ -19,7 +19,7 @@ include 'components/save_send.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Search Page</title>
+    <title>Tìm Kiếm</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -40,130 +40,93 @@ include 'components/save_send.php';
 
    <form action="" method="post">
       <div id="close-filter"><i class="fas fa-times"></i></div>
-      <h3>filter your search</h3>
+      <h3>Tìm Kiếm</h3>
          
          <div class="flex">
             <div class="box">
-               <p>enter location</p>
-               <input type="text" name="location" required maxlength="50" placeholder="enter ciyt name" class="input">
+               <p>Nhập Địa Chỉ</p>
+               <input type="text" name="location" required maxlength="50" placeholder="Nhập Địa Chỉ Tìm Kiếm" class="input">
             </div>
             <div class="box">
-               <p>offer type</p>
+               <p>Loại Hình</p>
                <select name="offer" class="input" required>
-                  <option value="sale">sale</option>
-                  <option value="resale">resale</option>
-                  <option value="rent">rent</option>
+                  <option value="sale">Khuyến Mãi</option>
+                  <option value="resale">Bán Lại</option>
+                  <option value="rent">Cho Thuê</option>
                </select>
             </div>
             <div class="box">
-               <p>property type</p>
+               <p>Loại Hình BDS</p>
                <select name="type" class="input" required>
-                  <option value="flat">flat</option>
-                  <option value="house">house</option>
-                  <option value="shop">shop</option>
+                  <option value="flat">Mặt Bằng</option>
+                  <option value="house">Nhà ở</option>
+                  <option value="shop">Cửa Hàng</option>
                </select>
             </div>
             <div class="box">
-               <p>how many BHK</p>
+               <p>Bao Nhiêu Phòng Ngủ</p>
                <select name="bhk" class="input" required>
-                  <option value="1">1 BHK</option>
-                  <option value="2">2 BHK</option>
-                  <option value="3">3 BHK</option>
-                  <option value="4">4 BHK</option>
-                  <option value="5">5 BHK</option>
-                  <option value="6">6 BHK</option>
-                  <option value="7">7 BHK</option>
-                  <option value="8">8 BHK</option>
-                  <option value="9">9 BHK</option>
+                  <option value="1">1 Phòng Ngủ</option>
+                  <option value="2">2 Phòng Ngủ</option>
+                  <option value="3">3 Phòng Ngủ</option>
+                  <option value="4">4 Phòng Ngủ</option>
+                  <option value="5">5 Phòng Ngủ</option>
+                  <option value="6">6 Phòng Ngủ</option>
+                  <option value="7">7 Phòng Ngủ</option>
+                  <option value="8">8 Phòng Ngủ</option>
+                  <option value="9">9 Phòng Ngủ</option>
                </select>
             </div>
             <div class="box">
-               <p>maximum budget</p>
+               <p>Ngân Sách Tối Đa</p>
                <select name="min" class="input" required>
-                  <option value="5000">5k</option>
-                  <option value="10000">10k</option>
-                  <option value="15000">15k</option>
-                  <option value="20000">20k</option>
-                  <option value="30000">30k</option>
-                  <option value="40000">40k</option>
-                  <option value="40000">40k</option>
-                  <option value="50000">50k</option>
-                  <option value="100000">1 lac</option>
-                  <option value="500000">5 lac</option>
-                  <option value="1000000">10 lac</option>
-                  <option value="2000000">20 lac</option>
-                  <option value="3000000">30 lac</option>
-                  <option value="4000000">40 lac</option>
-                  <option value="4000000">40 lac</option>
-                  <option value="5000000">50 lac</option>
-                  <option value="6000000">60 lac</option>
-                  <option value="7000000">70 lac</option>
-                  <option value="8000000">80 lac</option>
-                  <option value="9000000">90 lac</option>
-                  <option value="10000000">1 Cr</option>
-                  <option value="20000000">2 Cr</option>
-                  <option value="30000000">3 Cr</option>
-                  <option value="40000000">4 Cr</option>
-                  <option value="50000000">5 Cr</option>
-                  <option value="60000000">6 Cr</option>
-                  <option value="70000000">7 Cr</option>
-                  <option value="80000000">8 Cr</option>
-                  <option value="90000000">9 Cr</option>
-                  <option value="100000000">10 Cr</option>
-                  <option value="150000000">15 Cr</option>
-                  <option value="200000000">20 Cr</option>
+               <option value="5000">5 triệu</option>
+                              <option value="10000">10 triệu</option>
+                              <option value="15000">15 triệu</option>
+                              <option value="20000">20 triệu</option>
+                              <option value="30000">30 triệu</option>
+                              <option value="40000">40 triệu</option>
+                              <option value="40000">40 triệu</option>
+                              <option value="50000">50 triệu</option>
+                              <option value="100000">1 triệu</option>
+                              <option value="500000">5 triệu</option>
+                              <option value="1000000">10 triệu</option>
+                              <option value="2000000">20 triệu</option>
+                              <option value="3000000">30 triệu</option>
+                              <option value="4000000">40 triệu</option>
+                              <option value="4000000">40 triệu</option>
+                              <option value="5000000">50 triệu</option>
+                              <option value="6000000">60 triệu</option>
+                              <option value="7000000">70 triệu</option>
+                              <option value="8000000">80 triệu</option>
+                              <option value="9000000">90 triệu</option>
+                              <option value="10000000">1 trăm triệu</option>
+                              <option value="20000000">2 trăm triệu</option>
+                              <option value="30000000">3 trăm triệu</option>
+                              <option value="40000000">4 trăm triệu</option>
+                              <option value="50000000">5 trăm triệu</option>
+                              <option value="60000000">6 trăm triệu</option>
+                              <option value="70000000">7 trăm triệu</option>
+                              <option value="80000000">8 trăm triệu</option>
+                              <option value="90000000">9 trăm triệu</option>
+                              <option value="100000000">1 Tỷ</option>
+                              <option value="150000000">1,5 Tỷ</option>
+                              <option value="200000000">2 Tỷ</option>
                </select>
             </div>
             <div class="box">
-               <p>maximum budget</p>
-               <select name="max" class="input" required>
-                  <option value="5000">5k</option>
-                  <option value="10000">10k</option>
-                  <option value="15000">15k</option>
-                  <option value="20000">20k</option>
-                  <option value="30000">30k</option>
-                  <option value="40000">40k</option>
-                  <option value="40000">40k</option>
-                  <option value="50000">50k</option>
-                  <option value="100000">1 lac</option>
-                  <option value="500000">5 lac</option>
-                  <option value="1000000">10 lac</option>
-                  <option value="2000000">20 lac</option>
-                  <option value="3000000">30 lac</option>
-                  <option value="4000000">40 lac</option>
-                  <option value="4000000">40 lac</option>
-                  <option value="5000000">50 lac</option>
-                  <option value="6000000">60 lac</option>
-                  <option value="7000000">70 lac</option>
-                  <option value="8000000">80 lac</option>
-                  <option value="9000000">90 lac</option>
-                  <option value="10000000">1 Cr</option>
-                  <option value="20000000">2 Cr</option>
-                  <option value="30000000">3 Cr</option>
-                  <option value="40000000">4 Cr</option>
-                  <option value="50000000">5 Cr</option>
-                  <option value="60000000">6 Cr</option>
-                  <option value="70000000">7 Cr</option>
-                  <option value="80000000">8 Cr</option>
-                  <option value="90000000">9 Cr</option>
-                  <option value="100000000">10 Cr</option>
-                  <option value="150000000">15 Cr</option>
-                  <option value="200000000">20 Cr</option>
-               </select>
-            </div>
-            <div class="box">
-               <p>status</p>
+               <p>Trạng Thái</p>
                <select name="status" class="input" required>
-                  <option value="ready to move">ready to move</option>
-                  <option value="under construction">under construction</option>
+                  <option value="ready to move">Sẵn Sàng Dọn Vào</option>
+                  <option value="under construction">Đang Xây Dựng</option>
                </select>
             </div>
             <div class="box">
-               <p>furnished</p>
+               <p>Trang Bị</p>
                <select name="furnished" class="input" required>
-                  <option value="unfurnished">unfurnished</option>
-                  <option value="furnished">furnished</option>
-                  <option value="semi-furnished">semi-furnished</option>
+                  <option value="unfurnished">Không Nội Thất</option>
+                  <option value="furnished">Có Nội Thất</option>
+                  <option value="semi-furnished">Bán Kèm Nội Thất</option>
                </select>
             </div>
          </div>
@@ -231,7 +194,7 @@ if(isset($_POST['h_search'])){
       if(isset($_POST['h_search']) or isset($_POST['filter_search'])){
          echo '<h1 class="heading">search results</h1>';
       }else{
-         echo '<h1 class="heading">latest listings</h1>';
+         echo '<h1 class="heading">Danh Sách Mới Nhất</h1>';
       }
    ?>
 
@@ -277,11 +240,11 @@ if(isset($_POST['h_search'])){
             <?php
                if($select_saved->rowCount() > 0){
             ?>
-            <button type="submit" name="save" class="save"><i class="fas fa-heart"></i><span>saved</span></button>
+            <button type="submit" name="save" class="save"><i class="fas fa-heart"></i><span>Đã Lưu</span></button>
             <?php
                }else{ 
             ?>
-            <button type="submit" name="save" class="save"><i class="far fa-heart"></i><span>save</span></button>
+            <button type="submit" name="save" class="save"><i class="far fa-heart"></i><span>Lưu Lại</span></button>
             <?php
                }
             ?>
@@ -304,21 +267,21 @@ if(isset($_POST['h_search'])){
             <div class="flex">
                <p><i class="fas fa-house"></i><span><?= $fetch_property['type']; ?></span></p>
                <p><i class="fas fa-tag"></i><span><?= $fetch_property['offer']; ?></span></p>
-               <p><i class="fas fa-bed"></i><span><?= $fetch_property['bhk']; ?> BHK</span></p>
+               <p><i class="fas fa-bed"></i><span><?= $fetch_property['bhk']; ?> Phòng Ngủ</span></p>
                <p><i class="fas fa-trowel"></i><span><?= $fetch_property['status']; ?></span></p>
                <p><i class="fas fa-couch"></i><span><?= $fetch_property['furnished']; ?></span></p>
-               <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>sqft</span></p>
+               <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?> Mét Vuông</span></p>
             </div>
             <div class="flex-btn">
-               <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
-               <input type="submit" value="send enquiry" name="send" class="btn">
+               <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">Xem Tài Sản</a>
+               <input type="submit" value="Gửi yêu cầu" name="send" class="btn">
             </div>
          </div>
       </form>
       <?php
          }
       }else{
-         echo '<p class="empty">no results found!</p>';
+         echo '<p class="empty">Không Tìm Thấy Kết Quả ?</p>';
       }
       ?>
       

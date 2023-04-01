@@ -67,12 +67,12 @@ if(isset($_POST['send'])){
             <img src="images/contact-img.svg" alt="">
         </div>
         <form action="" method="post">
-            <h3>get in touch</h3>
-            <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
-            <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
-            <input type="number" name="number" required maxlength="10" max="9999999999" min="0" placeholder="enter your number" class="box">
-            <textarea name="message" placeholder="enter your message" required maxlength="1000" cols="30" rows="10" class="box"></textarea>
-            <input type="submit" value="send message" name="send" class="btn">
+            <h3>Để lại Thông Tin Liên Lạc</h3>
+            <input type="text" name="name" required maxlength="50" placeholder="Nhập tên của bạn" class="box">
+            <input type="email" name="email" required maxlength="50" placeholder="Nhập Email của bạn" class="box">
+            <input type="number" name="number" required maxlength="10" max="9999999999" min="0" placeholder="Nhập Số Điện Thoại Của Bạn" class="box">
+            <textarea name="message" placeholder="Nhập Thông Tin Cần Hỗ Trợ" required maxlength="1000" cols="30" rows="10" class="box"></textarea>
+            <input type="submit" value="Gửi Tin" name="send" class="btn">
         </form>
     </div>
 
@@ -89,33 +89,33 @@ if(isset($_POST['send'])){
    <div class="box-container">
 
         <div class="box active">
-            <h3><span>how to cancel booking?</span><i class="fas fa-angle-down"></i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
+            <h3><span>Làm thế nào để hủy đặt cọc ?</span><i class="fas fa-angle-down"></i></h3>
+            <p>hợp đồng đặt cọc không có hiệu lực, các bên không phải thực hiện nghĩa vụ đã thỏa thuận để giao kết hợp đồng chuyển nhượng.</p>
         </div>
 
         <div class="box active">
-            <h3><span>when will I get the possession?</span><i class="fas fa-angle-down"></i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
+            <h3><span>Khi nào tôi nhận được tài sản ?</span><i class="fas fa-angle-down"></i></h3>
+            <p>Hội đồng thanh lý tài sản có nhiệm vụ thống kê, phân loại, số lượng, thu nhập hồ sơ kỹ thuật, các giấy tờ liên quan đến tài sản. Hội đồng thanh lý tài sản cũng đồng thời kiểm tra, đánh giá chất lượng tài sản và xác định tài sản tương xứng là bao nhiêu.</p>
         </div>
 
         <div class="box">
-            <h3><span>where can I pay the rent?</span><i class="fas fa-angle-down"></i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
+            <h3><span>Tôi sẽ trả tiền thuê nhà ở đâu ?</span><i class="fas fa-angle-down"></i></h3>
+            <p>Bạn có thể trực tiếp thanh toán tiền thuê nhà bằng cách sử dụng khe cắm trả tiền thuê nhà tại văn phòng người quản lý tài sản của bạn. </p>
         </div>
 
         <div class="box">
-            <h3><span>how to contact with the buyers?</span><i class="fas fa-angle-down"></i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
+            <h3><span>Làm thế nào để liên hệ với người mua?</span><i class="fas fa-angle-down"></i></h3>
+            <p>Vậy bạn đã biết cách để liên hệ với họ nhanh chóng và thuận tiện nhất chưa?</p>
         </div>
 
         <div class="box">
-            <h3><span>why my listing not showing up?</span><i class="fas fa-angle-down"></i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
+            <h3><span>Tại Sao Danh Sách Của tôi không hiển thị</span><i class="fas fa-angle-down"></i></h3>
+            <p>Bạn Hãy làm theo hướng dẫn Sau đây.</p>
         </div>
 
         <div class="box">
-            <h3><span>how to promote my listing?</span><i class="fas fa-angle-down"></i></h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus veritatis ducimus aut accusantium sunt error esse laborum cumque ipsum ab.</p>
+            <h3><span>Làm Sao để điều khiển danh sách của tôi ?</span><i class="fas fa-angle-down"></i></h3>
+            <p>Bạn Hãy nhấn vào mục danh mục của tôi để quản lí danh mục của mình</p>
         </div>
 
     </div>

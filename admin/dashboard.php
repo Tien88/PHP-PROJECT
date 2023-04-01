@@ -18,7 +18,7 @@ if(isset($_COOKIE['admin_id'])){
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Bảng Điều Khiển</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -38,7 +38,7 @@ if(isset($_COOKIE['admin_id'])){
 
     <section class="dashboard">
 
-        <h1 class="heading">dashboard</h1>
+        <h1 class="heading">Bảng Điều Khiển</h1>
 
         <div class="box-container">
 
@@ -48,9 +48,9 @@ if(isset($_COOKIE['admin_id'])){
          $select_profile->execute([$admin_id]);
          $fetch_profile = $select_profile->fetch(PDO::FETCH_ASSOC);
       ?>
-                <h3>welcome!</h3>
+                <h3>Chào Mừng !</h3>
                 <p><?= $fetch_profile['name']; ?></p>
-                <a href="update.php" class="btn">update profile</a>
+                <a href="update.php" class="btn">Cập Nhật Thông Tin</a>
             </div>
 
             <div class="box">
@@ -60,8 +60,8 @@ if(isset($_COOKIE['admin_id'])){
          $count_listings = $select_listings->rowCount();
       ?>
                 <h3><?= $count_listings; ?></h3>
-                <p>property posted</p>
-                <a href="listings.php" class="btn">view listings</a>
+                <p>Tài Sản Đã Đăng</p>
+                <a href="listings.php" class="btn">Xem Danh Sách</a>
             </div>
 
             <div class="box">
@@ -71,8 +71,8 @@ if(isset($_COOKIE['admin_id'])){
          $count_users = $select_users->rowCount();
       ?>
                 <h3><?= $count_users; ?></h3>
-                <p>total users</p>
-                <a href="users.php" class="btn">view users</a>
+                <p>Tổng Người Dùng</p>
+                <a href="users.php" class="btn">Xem Các Người Dùng</a>
             </div>
 
             <div class="box">
@@ -82,8 +82,8 @@ if(isset($_COOKIE['admin_id'])){
          $count_admins = $select_admins->rowCount();
       ?>
                 <h3><?= $count_admins; ?></h3>
-                <p>total admins</p>
-                <a href="admins.php" class="btn">view admins</a>
+                <p>Tổng Admin</p>
+                <a href="admins.php" class="btn">Xem Các Admin</a>
             </div>
 
             <div class="box">
@@ -93,8 +93,8 @@ if(isset($_COOKIE['admin_id'])){
          $count_messages = $select_messages->rowCount();
       ?>
                 <h3><?= $count_messages; ?></h3>
-                <p>new messages</p>
-                <a href="messages.php" class="btn">view messages</a>
+                <p>Tin Nhắn Mới</p>
+                <a href="messages.php" class="btn">Xem Các tin Nhắn</a>
             </div>
 
         </div>

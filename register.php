@@ -82,20 +82,20 @@ include 'components/save_send.php';
 
     <section class="form-container">
         <form action="" method="POST">
-            <h3>create an account</h3>
-            <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+            <h3>Tạo Tài Khoản</h3>
+            <input type="text" name="name" required maxlength="50" placeholder="Nhập Tên Của Bạn" class="box">
 
-            <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+            <input type="email" name="email" required maxlength="50" placeholder="Nhập Email" class="box">
 
-            <input type="number" name="number" required maxlength="50" placeholder="enter your number" min="0"
+            <input type="number" name="number" required maxlength="50" placeholder="Nhập Số Điện Thoại Của Bạn" min="0"
                 max="9999999999" maxlength="10" class="box">
 
-            <input type="password" name="pass" required maxlength="50" placeholder="enter your password" class="box">
+            <input type="password" name="pass" required maxlength="50" placeholder="Nhập Mật Khẩu Của Bạn" class="box">
 
-            <input type="password" name="c_pass" required maxlength="50" placeholder="confirm your password"
+            <input type="password" name="c_pass" required maxlength="50" placeholder="Xác Nhận Lại Mật Khẩu Của Bạn"
                 class="box">
 
-            <p>already have an account? <a href="login.php">login now</a></p>
+            <p>Bạn Đã Có Tài Khoản ? <a href="login.php">Đăng Nhập</a></p>
 
             <input type="submit" value="register new" name="submit" class="btn">
         </form>

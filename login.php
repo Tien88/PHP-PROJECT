@@ -40,7 +40,7 @@ include 'components/save_send.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Đăng Nhập</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -59,12 +59,12 @@ include 'components/save_send.php';
 
     <section class="form-container">
         <form action="" method="POST">
-            <h3>welcome back!</h3>
+            <h3>Chào Mừng !</h3>
             <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
 
             <input type="password" name="pass" required maxlength="50" placeholder="enter your password" class="box">
 
-            <p>don't have an account? <a href="login.php">register now</a></p>
+            <p>Bạn Chưa Có Tài Khoản <a href="login.php">Đăng Ký</a></p>
 
             <input type="submit" value="login now" name="submit" class="btn">
 

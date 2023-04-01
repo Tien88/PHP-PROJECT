@@ -1,3 +1,4 @@
+
 <footer class="footer">
 
     <section class="flex">
@@ -10,11 +11,11 @@
         </div>
 
         <div class="box">
-            <a href="home.php"><span>Home</span></a>
-            <a href="about.php"><span>about us</span></a>
-            <a href="contact.php"><span>contact us</span></a>
-            <a href="listings.php"><span>all listings</span></a>
-            <a href="dashboard.php"><span>my dashboard</span></a>
+            <a href="home.php"><span>Trang Chủ</span></a>
+            <a href="about.php"><span>Thông Tin Về Chúng Tôi</span></a>
+            <a href="contact.php"><span>Liên Hệ</span></a>
+            <a href="listings.php"><span>Tất Cả Danh Sách</span></a>
+            <a href="dashboard.php"><span>Bảng Điều Khiển</span></a>
         </div>
 
         <div class="box">

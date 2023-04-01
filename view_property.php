@@ -25,7 +25,7 @@ include 'components/save_send.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>View Property</title>
+    <title>Xem Tài Sản</title>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
@@ -45,7 +45,7 @@ include 'components/save_send.php';
 
     <section class="view-property">
 
-        <h1 class="heading">property details</h1>
+        <h1 class="heading">Chi Tiết Bất Động Sản</h1>
 
         <?php
       $select_properties = $conn->prepare("SELECT * FROM `property` WHERE id = ? ORDER BY date DESC LIMIT 1");
@@ -91,81 +91,81 @@ include 'components/save_send.php';
                 <p><i class="fas fa-house"></i><span><?= $fetch_property['offer']; ?></span></p>
                 <p><i class="fas fa-calendar"></i><span><?= $fetch_property['date']; ?></span></p>
             </div>
-            <h3 class="title">details</h3>
+            <h3 class="title">Chi Tiết</h3>
             <div class="flex">
                 <div class="box">
-                    <p><i>rooms :</i><span><?= $fetch_property['bhk']; ?> BHK</span></p>
-                    <p><i>deposit amount : </i><span><span class="fas fa-indian-rupee-sign"
+                    <p><i>Phòng :</i><span><?= $fetch_property['bhk']; ?> Phòng</span></p>
+                    <p><i>Tiền Đặt Cọc : </i><span><span class="fas fa-indian-rupee-sign"
                                 style="margin-right: .5rem;"></span><?= $fetch_property['deposite']; ?></span></p>
-                    <p><i>status :</i><span><?= $fetch_property['status']; ?></span></p>
-                    <p><i>bedroom :</i><span><?= $fetch_property['bedroom']; ?></span></p>
-                    <p><i>bathroom :</i><span><?= $fetch_property['bathroom']; ?></span></p>
-                    <p><i>balcony :</i><span><?= $fetch_property['balcony']; ?></span></p>
+                    <p><i>Trạng Thái :</i><span><?= $fetch_property['status']; ?></span></p>
+                    <p><i>Phòng Ngủ :</i><span><?= $fetch_property['bedroom']; ?></span></p>
+                    <p><i>Phòng Tắm :</i><span><?= $fetch_property['bathroom']; ?></span></p>
+                    <p><i>Ban Công :</i><span><?= $fetch_property['balcony']; ?></span></p>
                 </div>
                 <div class="box">
-                    <p><i>carpet area :</i><span><?= $fetch_property['carpet']; ?>sqft</span></p>
-                    <p><i>age :</i><span><?= $fetch_property['age']; ?> years</span></p>
-                    <p><i>total floors :</i><span><?= $fetch_property['total_floors']; ?></span></p>
-                    <p><i>room floor :</i><span><?= $fetch_property['room_floor']; ?></span></p>
-                    <p><i>furnished :</i><span><?= $fetch_property['furnished']; ?></span></p>
-                    <p><i>loan :</i><span><?= $fetch_property['loan']; ?></span></p>
+                    <p><i>Diện Tích Sàn :</i><span><?= $fetch_property['carpet']; ?> Mét Vuông</span></p>
+                    <p><i>Tuổi Tài Sản :</i><span><?= $fetch_property['age']; ?> Năm</span></p>
+                    <p><i>Tổng Số Tầng :</i><span><?= $fetch_property['total_floors']; ?></span></p>
+                    <p><i>Phòng Căn Hộ :</i><span><?= $fetch_property['room_floor']; ?></span></p>
+                    <p><i>Nội Thất :</i><span><?= $fetch_property['furnished']; ?></span></p>
+                    <p><i>Khoản Vay :</i><span><?= $fetch_property['loan']; ?></span></p>
                 </div>
             </div>
-            <h3 class="title">amenities</h3>
+            <h3 class="title">Tiện Nghi</h3>
             <div class="flex">
                 <div class="box">
                     <p><i
-                            class="fas fa-<?php if($fetch_property['lift'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>lifts</span>
+                            class="fas fa-<?php if($fetch_property['lift'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Thang Máy</span>
                     </p>
                     <p><i
-                            class="fas fa-<?php if($fetch_property['security_guard'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>security
-                            guards</span></p>
-                    <p><i
-                            class="fas fa-<?php if($fetch_property['play_ground'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>play
-                            ground</span></p>
-                    <p><i
-                            class="fas fa-<?php if($fetch_property['garden'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>gardens</span>
+                            class="fas fa-<?php if($fetch_property['security_guard'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Nhân Viên Bảo Vệ</span>
                     </p>
                     <p><i
-                            class="fas fa-<?php if($fetch_property['water_supply'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>water
-                            supply</span></p>
+                            class="fas fa-<?php if($fetch_property['play_ground'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Sân Chơi</span>
+                    </p>
                     <p><i
-                            class="fas fa-<?php if($fetch_property['power_backup'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>power
-                            backup</span></p>
+                            class="fas fa-<?php if($fetch_property['garden'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Sân Vườn</span>
+                    </p>
+                    <p><i
+                            class="fas fa-<?php if($fetch_property['water_supply'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Cung Cấp Nước</span>
+                        </p>
+                    <p><i
+                            class="fas fa-<?php if($fetch_property['power_backup'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Năng Lượng Dự Phòng</span>
+                    </p>
                 </div>
                 <div class="box">
                     <p><i
-                            class="fas fa-<?php if($fetch_property['parking_area'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>parking
-                            area</span></p>
-                    <p><i
-                            class="fas fa-<?php if($fetch_property['gym'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>gym</span>
+                            class="fas fa-<?php if($fetch_property['parking_area'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Bãi Đậu Xe</span>
                     </p>
                     <p><i
-                            class="fas fa-<?php if($fetch_property['shopping_mall'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>shopping
-                            mall</span></p>
-                    <p><i
-                            class="fas fa-<?php if($fetch_property['hospital'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>hospital</span>
+                            class="fas fa-<?php if($fetch_property['gym'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Phòng Gym</span>
                     </p>
                     <p><i
-                            class="fas fa-<?php if($fetch_property['school'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>schools</span>
+                            class="fas fa-<?php if($fetch_property['shopping_mall'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Cửa Hàng Mua Sắm</span>
                     </p>
                     <p><i
-                            class="fas fa-<?php if($fetch_property['market_area'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>market
-                            area</span></p>
+                            class="fas fa-<?php if($fetch_property['hospital'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Bệnh Viện</span>
+                    </p>
+                    <p><i
+                            class="fas fa-<?php if($fetch_property['school'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Trường Học</span>
+                    </p>
+                    <p><i
+                            class="fas fa-<?php if($fetch_property['market_area'] == 'yes'){echo 'check';}else{echo 'times';} ?>"></i><span>Trung Tâm Thương Mại</span>
+                    </p>
                 </div>
             </div>
-            <h3 class="title">description</h3>
+            <h3 class="title">Mô Tả</h3>
             <p class="description"><?= $fetch_property['description']; ?></p>
             <form action="" method="post" class="flex-btn">
                 <input type="hidden" name="property_id" value="<?= $property_id; ?>">
                 <?php
             if($select_saved->rowCount() > 0){
          ?>
-                <button type="submit" name="save" class="save"><i class="fas fa-heart"></i><span>saved</span></button>
+                <button type="submit" name="save" class="save"><i class="fas fa-heart"></i><span>Đã lưu </span></button>
                 <?php
             }else{ 
          ?>
-                <button type="submit" name="save" class="save"><i class="far fa-heart"></i><span>save</span></button>
+                <button type="submit" name="save" class="save"><i class="far fa-heart"></i><span>Lưu Lại</span></button>
                 <?php
             }
          ?>
@@ -175,7 +175,7 @@ include 'components/save_send.php';
         <?php
       }
    }else{
-      echo '<p class="empty">property not found! <a href="post_property.php" style="margin-top:1.5rem;" class="btn">add new</a></p>';
+      echo '<p class="empty">Tài Sản Không Tìm Thấy ?<a href="post_property.php" style="margin-top:1.5rem;" class="btn">Thêm Mới</a></p>';
    }
    ?>
 

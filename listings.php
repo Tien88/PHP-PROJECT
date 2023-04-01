@@ -19,7 +19,7 @@ include 'components/save_send.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>All Listings</title>
+    <title>Danh Sách</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -38,7 +38,7 @@ include 'components/save_send.php';
 
     <section class="listings">
 
-        <h1 class="heading">latest listings</h1>
+        <h1 class="heading">Danh Sách Mới Nhất</h1>
 
         <div class="box-container">
          
@@ -87,12 +87,12 @@ include 'components/save_send.php';
                if($select_saved->rowCount() > 0){
             ?>
                     <button type="submit" name="save" class="save"><i
-                            class="fas fa-heart"></i><span>saved</span></button>
+                            class="fas fa-heart"></i><span>Đã Lưu</span></button>
             <?php
                }else{ 
             ?>
                     <button type="submit" name="save" class="save"><i
-                            class="far fa-heart"></i><span>save</span></button>
+                            class="far fa-heart"></i><span>Lưu Lại</span></button>
             <?php
                }
             ?>
@@ -117,13 +117,13 @@ include 'components/save_send.php';
                     <div class="flex">
                         <p><i class="fas fa-house"></i><span><?= $fetch_property['type']; ?></span></p>
                         <p><i class="fas fa-tag"></i><span><?= $fetch_property['offer']; ?></span></p>
-                        <p><i class="fas fa-bed"></i><span><?= $fetch_property['bhk']; ?> BHK</span></p>
+                        <p><i class="fas fa-bed"></i><span><?= $fetch_property['bhk']; ?> Room</span></p>
                         <p><i class="fas fa-trowel"></i><span><?= $fetch_property['status']; ?></span></p>
                         <p><i class="fas fa-couch"></i><span><?= $fetch_property['furnished']; ?></span></p>
-                        <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>sqft</span></p>
+                        <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?> Mét Vuông</span></p>
                     </div>
                     <div class="flex-btn">
-                        <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
+                        <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">Xem Tài Sản</a>
                         <input type="submit" value="send enquiry" name="send" class="btn">
                     </div>
                 </div>
@@ -138,7 +138,7 @@ include 'components/save_send.php';
         </div>
 
         <div style="margin-top: 2rem; text-align:center;">
-            <a href="listings.php" class="inline-btn">view all</a>
+            <a href="listings.php" class="inline-btn">Xem Tất Cả</a>
         </div>
 
     </section>

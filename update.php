@@ -97,7 +97,7 @@ include 'components/save_send.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Update</title>
+    <title>Cập Nhật</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -115,7 +115,7 @@ include 'components/save_send.php';
 
     <section class="form-container">
         <form action="" method="POST">
-            <h3>update your account</h3>
+            <h3>Cập Nhật Tài Khoản</h3>
             <input type="text" name="name" maxlength="50" placeholder="<?=$fetch_account['name'];?>" class="box">
 
             <input type="email" name="email" maxlength="50" placeholder="<?=$fetch_account['email'];?>" class="box">
@@ -123,14 +123,14 @@ include 'components/save_send.php';
             <input type="number" name="number" maxlength="50" placeholder="<?=$fetch_account['number'];?>" min="0"
                 max="9999999999" maxlength="10" class="box">
 
-            <input type="password" name="old_pass" maxlength="50" placeholder="enter your old password" class="box">
+            <input type="password" name="old_pass" maxlength="50" placeholder="Nhập Mật Khẩu Cũ" class="box">
 
 
-            <input type="password" name="new_pass" maxlength="50" placeholder="enter your new password" class="box">
+            <input type="password" name="new_pass" maxlength="50" placeholder="Nhập Mật Khẩu Mới" class="box">
 
-            <input type="password" name="c_pass" maxlength="50" placeholder="confirm your new password" class="box">
+            <input type="password" name="c_pass" maxlength="50" placeholder="Xác Nhận Lại Mật Khẩu Mới" class="box">
 
-            <input type="submit" value="update now" name="submit" class="btn">
+            <input type="submit" value="Cập Nhật Ngay" name="submit" class="btn">
 
 
 

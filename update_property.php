@@ -331,7 +331,7 @@ include 'components/save_send.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Cập Nhật</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -359,7 +359,7 @@ include 'components/save_send.php';
     ?> 
 
     <form action="" method="post" enctype="multipart/form-data">
-        <h3>Property Details</h3>
+        <h3>Chi Tiết Bất Động Sản</h3>
         <input type="hidden" name="property_id" value="<? $property_id; ?>">
         <input type="hidden" name="old_image_01" value="<? $fetch_property['image_01']; ?>">
         <input type="hidden" name="old_image_02" value="<? $fetch_property['image_02']; ?>">
@@ -367,168 +367,168 @@ include 'components/save_send.php';
         <input type="hidden" name="old_image_04" value="<? $fetch_property['image_04']; ?>">
         <input type="hidden" name="old_image_05" value="<? $fetch_property['image_05']; ?>">
         <div class="box">
-            <p>Property Name </p>
+            <p>Tên Tài Sản</p>
             <input type="text" name="property_name" maxlength="50" required placeholder="Enter Property Name" class="input" value="<?= $fetch_property['property_name']; ?>">
         </div>
         <div class="flex">
             <div class="box">
-                <p>Property Price </p>
+                <p>Giá Tài Sản</p>
                 <input type="number" name="price" maxlength="10" min="0" max="9999999999" required placeholder="Enter Property Price" class="input" value="<?= $fetch_property['price']; ?>">
             </div>
             <div class="box">
-                <p>Deposite Amount </p>
+                <p>Tiền Đặt Cọc</p>
                 <input type="number" name="deposite" maxlength="10" min="0" max="9999999999" required placeholder="Enter Property Price" class="input" value="<?= $fetch_property['deposite']; ?>">
             </div>
             <div class="box">
-                <p>Property Address </p>
+                <p>Địa Chỉ Tài Sản</p>
                 <input type="text" name="address" maxlength="100" required placeholder="Enter Property Address" class="input" value="<?= $fetch_property['address']; ?>">
             </div>
             <div class="box">
-                <p>Offer Type</p>
+                <p>Loại Ưu Đãi</p>
                 <select name="offer" required class="input">
                     <option value="<? $fetch_property['offer']; ?>" selected><?= $fetch_property['offer']; ?></option>
-                    <option value="sale">sale</option>
-                    <option value="resale">resale</option>
-                    <option value="rent">rent</option>
+                    <option value="sale">Khuyến mãi</option>
+                    <option value="resale">Bán Lại</option>
+                    <option value="rent">Cho Thuê</option>
                 </select>
             </div>
             <div class="box">
-                <p>Property Type</p>
+                <p>Loại Hình BDS</p>
                 <select name="type" class="input" required>
                     <option value="<? $fetch_property['type']; ?>" selected><?= $fetch_property['type']; ?></option>
-                    <option value="flat">flat</option>
-                    <option value="house">house</option>
-                    <option value="shop">shop</option>
+                    <option value="flat">Mặt Bằng</option>
+                    <option value="house">Nhà Phố</option>
+                    <option value="shop">Cửa Hàng</option>
                 </select>
             </div>
             <div class="box">
-                <p>Property Status</p>
+                <p>Tình Trạng BDS</p>
                 <select name="status" required class="input">
                     <option value="<? $fetch_property['status']; ?>" selected><?= $fetch_property['status']; ?></option>
-                    <option value="ready to move">ready to move</option>
-                    <option value="under construction">under construction</option>
+                    <option value="ready to move">Sẵn sàng dọn vào</option>
+                    <option value="under construction">Đang Xây Dựng</option>
                 </select>
             </div>
             <div class="box">
-                <p>Furnished Status</p>
+                <p>Tình Trạng Nội Thất</p>
                 <select name="furnished" required class="input">
                     <option value="<? $fetch_property['furnished']; ?>" selected><?= $fetch_property['furnished']; ?></option>
-                    <option value="furnished">furnished</option>
-                    <option value="semi-furnished">semi-furnished</option>
-                    <option value="unfurnished">unfurnished</option>
+                    <option value="furnished">Có Nội Thất</option>
+                    <option value="semi-furnished">Không Nội Thất</option>
+                    <option value="unfurnished">Mua Kèm Nội Thất</option>
                 </select>
             </div>
             <div class="box">
-                <p>How many BHK</p>
+                <p>Bao Nhiêu Phòng Ngủ</p>
                 <select name="bhk" required class="input">
                     <option value="<? $fetch_property['bhk']; ?>" selected><?= $fetch_property['bhk']; ?> BHK</option>
-                    <option value="1">1 BHK</option>
-                    <option value="2">2 BHK</option>
-                    <option value="3">3 BHK</option>
-                    <option value="4">4 BHK</option>
-                    <option value="5">5 BHK</option>
-                    <option value="6">6 BHK</option>
-                    <option value="7">7 BHK</option>
-                    <option value="8">8 BHK</option>
-                    <option value="9">9 BHK</option>
+                    <option value="1">1 Phòng Ngủ</option>
+                    <option value="2">2 Phòng Ngủ</option>
+                    <option value="3">3 Phòng Ngủ</option>
+                    <option value="4">4 Phòng Ngủ</option>
+                    <option value="5">5 Phòng Ngủ</option>
+                    <option value="6">6 Phòng Ngủ</option>
+                    <option value="7">7 Phòng Ngủ</option>
+                    <option value="8">8 Phòng Ngủ</option>
+                    <option value="9">9 Phòng Ngủ</option>
                 </select>
             </div>
             <div class="box">
-                <p>How many bedrooms</p>
+                <p>Bao Nhiêu Phòng Ngủ ?</p>
                 <select name="bedroom" required class="input">
-                    <option value="<? $fetch_property['bedroom']; ?>" selected><?= $fetch_property['bedroom']; ?> bedroom</option>
-                    <option value="1">1 bedroom</option>
-                    <option value="2">2 bedrooms</option>
-                    <option value="3">3 bedrooms</option>
-                    <option value="4">4 bedrooms</option>
-                    <option value="5">5 bedrooms</option>
-                    <option value="6">6 bedrooms</option>
-                    <option value="7">7 bedrooms</option>
-                    <option value="8">8 bedrooms</option>
-                    <option value="9">9 bedrooms</option>
+                    <option value="<? $fetch_property['bedroom']; ?>" selected><?= $fetch_property['bedroom']; ?> Phòng Ngủ</option>
+                    <option value="1">1 Phòng Ngủ</option>
+                    <option value="2">2 Phòng Ngủ</option>
+                    <option value="3">3 Phòng Ngủ</option>
+                    <option value="4">4 Phòng Ngủ</option>
+                    <option value="5">5 Phòng Ngủ</option>
+                    <option value="6">6 Phòng Ngủ</option>
+                    <option value="7">7 Phòng Ngủ</option>
+                    <option value="8">8 Phòng Ngủ</option>
+                    <option value="9">9 Phòng Ngủ</option>
                 </select>
             </div>
             <div class="box">
-                <p>How many bathrooms</p>
+                <p>Bao Nhiêu Phòng Tắm ?</p>
                 <select name="bathroom" required class="input">
-                    <option value="<? $fetch_property['bathroom']; ?>" selected><?= $fetch_property['bathroom']; ?> bathroom</option>
-                    <option value="1">1 bathroom</option>
-                    <option value="2">2 bathrooms</option>
-                    <option value="3">3 bathrooms</option>
-                    <option value="4">4 bathrooms</option>
-                    <option value="5">5 bathrooms</option>
-                    <option value="6">6 bathrooms</option>
-                    <option value="7">7 bathrooms</option>
-                    <option value="8">8 bathrooms</option>
-                    <option value="9">9 bathrooms</option>
+                    <option value="<? $fetch_property['bathroom']; ?>" selected><?= $fetch_property['bathroom']; ?> Phòng tắm</option>
+                    <option value="1">1 Phòng Tắm</option>
+                    <option value="2">2 Phòng Tắm</option>
+                    <option value="3">3 Phòng Tắm</option>
+                    <option value="4">4 Phòng Tắm</option>
+                    <option value="5">5 Phòng Tắm</option>
+                    <option value="6">6 Phòng Tắm</option>
+                    <option value="7">7 Phòng Tắm</option>
+                    <option value="8">8 Phòng Tắm</option>
+                    <option value="9">9 Phòng Tắm</option>
                 </select>
             </div>
             <div class="box">
-                <p>How many balconys</p>
+                <p>bao Nhiêu Ban Công</p>
                 <select name="balcony" class="input" required>
-                    <option value="<? $fetch_property['balcony']; ?>" selected><?= $fetch_property['balcony']; ?> balcony</option>
-                    <option value="0">0 balcony</option>
-                    <option value="1">1 balcony</option>
-                    <option value="2">2 balcony</option>
-                    <option value="3">3 balcony</option>
-                    <option value="4">4 balcony</option>
-                    <option value="5">5 balcony</option>
-                    <option value="6">6 balcony</option>
-                    <option value="7">7 balcony</option>
-                    <option value="8">8 balcony</option>
-                    <option value="9">9 balcony</option>
+                    <option value="<? $fetch_property['balcony']; ?>" selected><?= $fetch_property['balcony']; ?> Ban Công</option>
+                    <option value="0">0 Ban Công</option>
+                    <option value="1">1 Ban Công</option>
+                    <option value="2">2 Ban Công</option>
+                    <option value="3">3 Ban Công</option>
+                    <option value="4">4 Ban Công</option>
+                    <option value="5">5 Ban Công</option>
+                    <option value="6">6 Ban Công</option>
+                    <option value="7">7 Ban Công</option>
+                    <option value="8">8 Ban Công</option>
+                    <option value="9">9 Ban Công</option>
                 </select>
             </div>
             <div class="box">
-                <p>Carpet Area</p>
+                <p>Diện Tích Sàn</p>
                 <input type="number" name="carpet" maxlength="10" min="0" max="9999999999" required placeholder="How May Squarefits" class="input" value="<?= $fetch_property['carpet']; ?>">
             </div>
             <div class="box">
-                <p>Property Age</p>
+                <p>Tuổi Tài Sản</p>
                 <input type="number" name="age" maxlength="2" min="0" max="99" required placeholder="How Old Is Property" class="input" value="<?= $fetch_property['age']; ?>">
             </div>
             <div class="box">
-                <p>Total Floors</p>
+                <p>Tổng Số Tầng</p>
                 <input type="number" name="total_floors" maxlength="2" min="0" max="99" required placeholder="How many floors" class="input" value="<?= $fetch_property['total_floors']; ?>">
             </div>
             <div class="box">
-                <p>Room Floor</p>
+                <p>Tầng Của căn nhà</p>
                 <input type="number" name="room_floor" maxlength="2" min="0" max="99" required placeholder="Property floor number" class="input" value="<?= $fetch_property['room_floor']; ?>">
             </div>
             <div class="box">
-                <p>loan</p>
+                <p>Khoản Vay</p>
                 <select name="loan" required class="input">
-                    <option value="<? $fetch_property['loan']; ?>" selected><?= $fetch_property['loan']; ?> balcony</option>
-                    <option value="available">available</option>
-                    <option value="not available">not available</option>
+                    <option value="<? $fetch_property['loan']; ?>" selected><?= $fetch_property['loan']; ?> Ban Công</option>
+                    <option value="available">Có Sẵn</option>
+                    <option value="not available">Không Có Sẵn</option>
                 </select>
             </div>
         </div>
         <div class="box">
-            <p>Property Description</p>
+            <p>Mô Tả Bất Động Sản</p>
             <textarea name="description" id="" cols="30" rows="10" maxlength="1000" require placeholder="enter property description" class="input"><?= $fetch_property['description']; ?></textarea>
         </div>
         <div class="checkbox">
             <div class="box">
-                <p><input type="checkbox" name="lift" value="yes" <?php if($fetch_property['lift'] == 'yes')echo 'checked'; ?>/>Lifts</p>
-                <p><input type="checkbox" name="security_guard" value="yes"/>Security Guard</p>
-                <p><input type="checkbox" name="play_ground" value="yes" <?php if($fetch_property['play_ground'] == 'yes')echo 'checked'; ?>/>Play Ground</p>
-                <p><input type="checkbox" name="garden" value="yes"     <?php if($fetch_property['garden'] == 'yes')echo 'checked'; ?>/>Garden</p>
-                <p><input type="checkbox" name="water_supply" value="yes" <?php if($fetch_property['water_supply'] == 'yes')echo 'checked'; ?>/>Water Supply</p>
-                <p><input type="checkbox" name="power_backup" value="yes" <?php if($fetch_property['power_backup'] == 'yes')echo 'checked'; ?>/>Power Backup</p>
+                <p><input type="checkbox" name="lift" value="yes" <?php if($fetch_property['lift'] == 'yes')echo 'checked'; ?>/>Thang Máy</p>
+                <p><input type="checkbox" name="security_guard" value="yes"/>Nhân Viên Bảo Vệ</p>
+                <p><input type="checkbox" name="play_ground" value="yes" <?php if($fetch_property['play_ground'] == 'yes')echo 'checked'; ?>/>Sân chơi</p>
+                <p><input type="checkbox" name="garden" value="yes"     <?php if($fetch_property['garden'] == 'yes')echo 'checked'; ?>/>Sân Vườn</p>
+                <p><input type="checkbox" name="water_supply" value="yes" <?php if($fetch_property['water_supply'] == 'yes')echo 'checked'; ?>/>Cung Cấp Nước</p>
+                <p><input type="checkbox" name="power_backup" value="yes" <?php if($fetch_property['power_backup'] == 'yes')echo 'checked'; ?>/>Năng Lượng Dự Phòng</p>
             </div>
             <div class="box">
-                <p><input type="checkbox" name="parking_area" value="yes" <?php if($fetch_property['parking_area'] == 'yes')echo 'checked'; ?>/>Parking_area</p>
-                <p><input type="checkbox" name="gym" value="yes" <?php if($fetch_property['lift'] == 'gym')echo 'checked'; ?>/>gym</p>
-                <p><input type="checkbox" name="shopping_mall" value="yes" <?php if($fetch_property['shopping_mall'] == 'yes')echo 'checked'; ?>/>shopping_mall</p>
-                <p><input type="checkbox" name="hospital" value="yes" <?php if($fetch_property['hospital'] == 'yes')echo 'checked'; ?>/>hospital</p>
-                <p><input type="checkbox" name="school" value="yes" <?php if($fetch_property['lift'] == 'school')echo 'checked'; ?>/>school</p>
-                <p><input type="checkbox" name="market_area" value="yes" <?php if($fetch_property['market_area'] == 'gym')echo 'checked'; ?>/>market_area</p>
+                <p><input type="checkbox" name="parking_area" value="yes" <?php if($fetch_property['parking_area'] == 'yes')echo 'checked'; ?>/>Bãi Đỗ Xe</p>
+                <p><input type="checkbox" name="gym" value="yes" <?php if($fetch_property['lift'] == 'gym')echo 'checked'; ?>/>Phòng Gym</p>
+                <p><input type="checkbox" name="shopping_mall" value="yes" <?php if($fetch_property['shopping_mall'] == 'yes')echo 'checked'; ?>/>Shopping_mall</p>
+                <p><input type="checkbox" name="hospital" value="yes" <?php if($fetch_property['hospital'] == 'yes')echo 'checked'; ?>/>Bệnh Viện</p>
+                <p><input type="checkbox" name="school" value="yes" <?php if($fetch_property['lift'] == 'school')echo 'checked'; ?>/>Trường học</p>
+                <p><input type="checkbox" name="market_area" value="yes" <?php if($fetch_property['market_area'] == 'gym')echo 'checked'; ?>/>Trung tâm Mua Sắm</p>
             </div>
         </div>
         <div class="box">
             <img src="uploaded_files/<?= $fetch_property['image_01']; ?>" alt="">
-            <p>update image 01 </p>
+            <p>Cập Nhật Hình 01 </p>
             <input type="file" name="image_01" class="input" accept="image/*" required>
         </div>
         <div class="flex">
@@ -540,7 +540,7 @@ include 'components/save_send.php';
                 <img src="uploaded_files/<?= $fetch_property['image_02']; ?>" alt="">
                 <input type="submit" value="delete image 02" name="detele_image_02" class="btn" onclick="return confirm('delete image 02?');">
                 <?php }; ?>
-                <p>update image 02</p>
+                <p>Cập Nhật Hình 02</p>
                 <input type="file" name="image_02" class="input" accept="image/*">
             </div>
             <div class="box">
@@ -551,7 +551,7 @@ include 'components/save_send.php';
                 <img src="uploaded_files/<?= $fetch_property['image_03']; ?>" alt="">
                 <input type="submit" value="delete image 03" name="detele_image_03" class="btn" onclick="return confirm('delete image 03?');">
                 <?php }; ?>
-                <p>update image 03</p>
+                <p>Cập Nhật Hình 03</p>
                 <input type="file" name="image_03" class="input" accept="image/*">
             </div>
             <div class="box">
@@ -562,7 +562,7 @@ include 'components/save_send.php';
                 <img src="uploaded_files/<?= $fetch_property['image_04']; ?>" alt="">
                 <input type="submit" value="delete image 04" name="detele_image_04" class="btn" onclick="return confirm('delete image 04?');">
                 <?php }; ?>
-                <p>update image 04</p>
+                <p>Cập Nhật Hình 04</p>
                 <input type="file" name="image_04" class="input" accept="image/*">
             </div>
             <div class="box">
@@ -573,7 +573,7 @@ include 'components/save_send.php';
                 <img src="uploaded_files/<?= $fetch_property['image_05']; ?>" alt="">
                 <input type="submit" value="delete image 05" name="detele_image_05" class="btn" onclick="return confirm('delete image 05?');">
                 <?php }; ?>
-                <p>update image 05</p>
+                <p>Cập Nhật Hình 05</p>
                 <input type="file" name="image_05" class="input" accept="image/*">
             </div>
         </div>
@@ -583,7 +583,7 @@ include 'components/save_send.php';
     <?php
           }
         }else{
-            echo '<p class="empty">Tai San khong tim thay !</p';
+            echo '<p class="empty">Tài Sản Không Tìm Thấy !</p';
         }
     ?>
 

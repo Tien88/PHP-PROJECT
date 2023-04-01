@@ -66,7 +66,7 @@ include 'components/save_send.php';
     <section class="form-container">
 
     <form action="" method="POST">
-    <h3>register new</h3>
+    <h3>Tạo Tài Khoản Mới</h3>
     <input type="text" name="name" placeholder="enter username" maxlength="20" class="box" required oninput="this.value = this.value.replace(/\s/g, '')">
     <input type="password" name="pass" placeholder="enter password" maxlength="20" class="box" required oninput="this.value = this.value.replace(/\s/g, '')">
     <input type="password" name="c_pass" placeholder="confirm password" maxlength="20" class="box" required oninput="this.value = this.value.replace(/\s/g, '')">

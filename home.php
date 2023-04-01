@@ -20,7 +20,7 @@ include 'components/save_send.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Trang Chủ</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -69,38 +69,38 @@ include 'components/save_send.php';
                     <div class="box">
                         <p>Ngân Sách Tối Đa <span>*</span></p>
                         <select name="h_min" class="input" required>
-                            <option value="5000">5k</option>
-                            <option value="10000">10k</option>
-                            <option value="15000">15k</option>
-                            <option value="20000">20k</option>
-                            <option value="30000">30k</option>
-                            <option value="40000">40k</option>
-                            <option value="40000">40k</option>
-                            <option value="50000">50k</option>
-                            <option value="100000">1 lac</option>
-                            <option value="500000">5 lac</option>
-                            <option value="1000000">10 lac</option>
-                            <option value="2000000">20 lac</option>
-                            <option value="3000000">30 lac</option>
-                            <option value="4000000">40 lac</option>
-                            <option value="4000000">40 lac</option>
-                            <option value="5000000">50 lac</option>
-                            <option value="6000000">60 lac</option>
-                            <option value="7000000">70 lac</option>
-                            <option value="8000000">80 lac</option>
-                            <option value="9000000">90 lac</option>
-                            <option value="10000000">1 Cr</option>
-                            <option value="20000000">2 Cr</option>
-                            <option value="30000000">3 Cr</option>
-                            <option value="40000000">4 Cr</option>
-                            <option value="50000000">5 Cr</option>
-                            <option value="60000000">6 Cr</option>
-                            <option value="70000000">7 Cr</option>
-                            <option value="80000000">8 Cr</option>
-                            <option value="90000000">9 Cr</option>
-                            <option value="100000000">10 Cr</option>
-                            <option value="150000000">15 Cr</option>
-                            <option value="200000000">20 Cr</option>
+                            <option value="5000">5 triệu</option>
+                            <option value="10000">10 triệu</option>
+                            <option value="15000">15 triệu</option>
+                            <option value="20000">20 triệu</option>
+                            <option value="30000">30 triệu</option>
+                            <option value="40000">40 triệu</option>
+                            <option value="40000">40 triệu</option>
+                            <option value="50000">50 triệu</option>
+                            <option value="100000">1 triệu</option>
+                            <option value="500000">5 triệu</option>
+                            <option value="1000000">10 triệu</option>
+                            <option value="2000000">20 triệu</option>
+                            <option value="3000000">30 triệu</option>
+                            <option value="4000000">40 triệu</option>
+                            <option value="4000000">40 triệu</option>
+                            <option value="5000000">50 triệu</option>
+                            <option value="6000000">60 triệu</option>
+                            <option value="7000000">70 triệu</option>
+                            <option value="8000000">80 triệu</option>
+                            <option value="9000000">90 triệu</option>
+                            <option value="10000000">1 trăm triệu</option>
+                            <option value="20000000">2 trăm triệu</option>
+                            <option value="30000000">3 trăm triệu</option>
+                            <option value="40000000">4 trăm triệu</option>
+                            <option value="50000000">5 trăm triệu</option>
+                            <option value="60000000">6 trăm triệu</option>
+                            <option value="70000000">7 trăm triệu</option>
+                            <option value="80000000">8 trăm triệu</option>
+                            <option value="90000000">9 trăm triệu</option>
+                            <option value="100000000">1 Tỷ</option>
+                            <option value="150000000">1,5 Tỷ</option>
+                            <option value="200000000">2 Tỷ</option>
                         </select>
                     </div>
                     <div class="box">
@@ -135,13 +135,13 @@ include 'components/save_send.php';
                             <option value="70000000">7 trăm triệu</option>
                             <option value="80000000">8 trăm triệu</option>
                             <option value="90000000">9 trăm triệu</option>
-                            <option value="100000000">10 Cr</option>
-                            <option value="150000000">15 Cr</option>
-                            <option value="200000000">20 Cr</option>
+                            <option value="100000000">1 Tỷ</option>
+                            <option value="150000000">1,5 Tỷ</option>
+                            <option value="200000000">2 Tỷ</option>
                         </select>
                     </div>
                 </div>
-                <input type="submit" value="search property" name="h_search" class="btn">
+                <input type="submit" value="Tìm Kiếm Tài Sản" name="h_search" class="btn">
             </form>
 
         </section>
@@ -155,7 +155,7 @@ include 'components/save_send.php';
 
     <section class="services">
 
-        <h1 class="heading">our services</h1>
+        <h1 class="heading">Dịch Vụ Của Chúng Tôi</h1>
 
         <div class="box-container">
 
@@ -205,7 +205,7 @@ include 'components/save_send.php';
 
     <section class="listings">
 
-        <h1 class="heading">latest listings</h1>
+        <h1 class="heading">Danh sách mới nhất</h1>
 
         <div class="box-container">
             <?php
@@ -253,12 +253,12 @@ include 'components/save_send.php';
                if($select_saved->rowCount() > 0){
             ?>
                     <button type="submit" name="save" class="save"><i
-                            class="fas fa-heart"></i><span>saved</span></button>
+                            class="fas fa-heart"></i><span>Đã Lưu</span></button>
                     <?php
                }else{ 
             ?>
                     <button type="submit" name="save" class="save"><i
-                            class="far fa-heart"></i><span>save</span></button>
+                            class="far fa-heart"></i><span>Lưu Lại</span></button>
                     <?php
                }
             ?>
@@ -286,11 +286,11 @@ include 'components/save_send.php';
                         <p><i class="fas fa-bed"></i><span><?= $fetch_property['bhk']; ?> BHK</span></p>
                         <p><i class="fas fa-trowel"></i><span><?= $fetch_property['status']; ?></span></p>
                         <p><i class="fas fa-couch"></i><span><?= $fetch_property['furnished']; ?></span></p>
-                        <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>sqft</span></p>
+                        <p><i class="fas fa-maximize"></i><span><?= $fetch_property['carpet']; ?>Mét Vuông</span></p>
                     </div>
                     <div class="flex-btn">
-                        <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">view property</a>
-                        <input type="submit" value="send enquiry" name="send" class="btn">
+                        <a href="view_property.php?get_id=<?= $fetch_property['id']; ?>" class="btn">Xem Bất Động Sản</a>
+                        <input type="submit" value="Gửi Yêu Cầu" name="send" class="btn">
                     </div>
                 </div>
             </form>
@@ -304,7 +304,7 @@ include 'components/save_send.php';
         </div>
 
         <div style="margin-top: 2rem; text-align:center;">
-            <a href="listings.php" class="inline-btn">view all</a>
+            <a href="listings.php" class="inline-btn">Xem Tất Cả</a>
         </div>
 
     </section>

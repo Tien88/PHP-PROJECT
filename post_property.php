@@ -325,15 +325,15 @@ include 'components/save_send.php';
             <div class="box">
                 <p>Bao Nhiêu Phòng Ngủ<span>*</span></p>
                 <select name="bedroom" required class="input">
-                    <option value="1">1 bedroom</option>
-                    <option value="2">2 bedrooms</option>
-                    <option value="3">3 bedrooms</option>
-                    <option value="4">4 bedrooms</option>
-                    <option value="5">5 bedrooms</option>
-                    <option value="6">6 bedrooms</option>
-                    <option value="7">7 bedrooms</option>
-                    <option value="8">8 bedrooms</option>
-                    <option value="9">9 bedrooms</option>
+                    <option value="1">1 Phòng Ngủ</option>
+                    <option value="2">2 Phòng Ngủ</option>
+                    <option value="3">3 Phòng Ngủ</option>
+                    <option value="4">4 Phòng Ngủ</option>
+                    <option value="5">5 Phòng Ngủ</option>
+                    <option value="6">6 Phòng Ngủ</option>
+                    <option value="7">7 Phòng Ngủ</option>
+                    <option value="8">8 Phòng Ngủ</option>
+                    <option value="9">9 Phòng Ngủ</option>
                 </select>
             </div>
             <div class="box">
@@ -412,24 +412,24 @@ include 'components/save_send.php';
             </div>
         </div>
         <div class="box">
-            <p>image 01 <span></span></p>
+            <p>Hình 01 <span></span></p>
             <input type="file" name="image_01" class="input" accept="image/*" required>
         </div>
         <div class="flex">
             <div class="box">
-                <p>image 02 <span></span></p>
+                <p>Hình 02 <span></span></p>
                 <input type="file" name="image_02" class="input" accept="image/*">
             </div>
             <div class="box">
-                <p>image 03 <span></span></p>
+                <p>Hình 03 <span></span></p>
                 <input type="file" name="image_03" class="input" accept="image/*">
             </div>
             <div class="box">
-                <p>image 04 <span></span></p>
+                <p>Hình 04 <span></span></p>
                 <input type="file" name="image_04" class="input" accept="image/*">
             </div>
             <div class="box">
-                <p>image 05 <span></span></p>
+                <p>Hình 05 <span></span></p>
                 <input type="file" name="image_05" class="input" accept="image/*">
             </div>
         </div>

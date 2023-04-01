@@ -18,7 +18,7 @@ include 'components/save_send.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Về Chúng Tôi</title>
 
     <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
@@ -69,26 +69,26 @@ include 'components/save_send.php';
 
     <section class="steps">
 
-    <h1 class="heading">3 simple steps</h1>
+    <h1 class="heading">3 Bước Đơn Giản</h1>
 
     <div class="box-container">
 
     <div class="box">
         <img src="images/step-1.png" alt="">
-        <h3>search property</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat.</p>
+        <h3>Tìm Kiếm Bất Động Sản</h3>
+        <p>Đăng tin bất động sản miễn phí tại BatDongSan.com</p>
     </div>
 
     <div class="box">
         <img src="images/step-2.png" alt="">
-        <h3>contact agents</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat.</p>
+        <h3>Liên Hệ Đại Lý</h3>
+        <p>Liên Hệ Với Chúng Tôi để được hỗ trợ tốt nhất.</p>
     </div>
 
     <div class="box">
         <img src="images/step-3.png" alt="">
-        <h3>enjoy property</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, placeat.</p>
+        <h3>Tìm Kiếm BĐS yêu thích</h3>
+        <p>Hãy Tìm Kiếm Bất Động Sản mà bạn yêu thích</p>
     </div>
 
     </div>
@@ -102,7 +102,7 @@ include 'components/save_send.php';
 
     <section class="reviews">
 
-    <h1 class="heading">client's reviews</h1>
+    <h1 class="heading">Nhận Xét Khách Hàng</h1>
 
     <div class="box-container">
 
@@ -110,7 +110,7 @@ include 'components/save_send.php';
         <div class="user">
             <img src="images/pic-1.png" alt="">
             <div>
-                <h3>john deo</h3>
+                <h3>Trần Minh Tiến</h3>
                 <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -120,14 +120,14 @@ include 'components/save_send.php';
                 </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
+        <p>Tìm Kiếm Nhanh Chóng</p>
     </div>
 
     <div class="box">
         <div class="user">
             <img src="images/pic-2.png" alt="">
             <div>
-                <h3>john deo</h3>
+                <h3>Lê Mai Vũ Hoàng</h3>
                 <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -137,14 +137,14 @@ include 'components/save_send.php';
                 </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
+        <p>Công tác viên hỗ trợ nhiệt tình</p>
     </div>
 
     <div class="box">
         <div class="user">
             <img src="images/pic-3.png" alt="">
             <div>
-                <h3>john deo</h3>
+                <h3>Nguyễn Phước Sang</h3>
                 <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -154,14 +154,14 @@ include 'components/save_send.php';
                 </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
+        <p>Đăng Tin nhanh chóng, hỗ trợ tốt</p>
     </div>
 
     <div class="box">
         <div class="user">
             <img src="images/pic-4.png" alt="">
             <div>
-                <h3>john deo</h3>
+                <h3>Đinh Trọng Sự</h3>
                 <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -171,14 +171,14 @@ include 'components/save_send.php';
                 </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
+        <p>Hỗ Trợ tốt</p>
     </div>
 
     <div class="box">
         <div class="user">
             <img src="images/pic-5.png" alt="">
             <div>
-                <h3>john deo</h3>
+                <h3>Nguyễn Lê Đăng Khoa</h3>
                 <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -188,14 +188,14 @@ include 'components/save_send.php';
                 </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
+        <p>Truy cập nhanh chóng, kết nối với người cần mua</p>
     </div>
 
     <div class="box">
         <div class="user">
             <img src="images/pic-6.png" alt="">
             <div>
-                <h3>john deo</h3>
+                <h3>Nguyễn Đức Tư</h3>
                 <div class="stars">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -205,7 +205,7 @@ include 'components/save_send.php';
                 </div>
             </div>
         </div>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci voluptates delectus distinctio quam sequi error eum suscipit tempore inventore ex!</p>
+        <p>Hỗ trợ nhiệt tình, nhanh chóng</p>
     </div>
 
     </div>
