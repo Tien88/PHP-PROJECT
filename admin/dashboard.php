@@ -30,11 +30,11 @@ if(isset($_COOKIE['admin_id'])){
 
 <body>
 
-    <!-- header section starts  -->
+    <!-- header starts  -->
     <?php include '../components/admin_header.php'; ?>
-    <!-- header section ends -->
+    <!-- header ends -->
 
-    <!-- dashboard section starts  -->
+    <!-- dashboard starts  -->
 
     <section class="dashboard">
 
@@ -102,7 +102,7 @@ if(isset($_COOKIE['admin_id'])){
     </section>
 
 
-    <!-- dashboard section ends -->
+    <!-- dashboard ends -->
 
 
 
