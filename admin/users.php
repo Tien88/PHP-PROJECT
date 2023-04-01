@@ -48,9 +48,9 @@ if(isset($_POST['delete'])){
       $delete_saved->execute([$delete_id]);
       $delete_user = $conn->prepare("DELETE FROM `users` WHERE id = ?");
       $delete_user->execute([$delete_id]);
-      $success_msg[] = 'user deleted!';
+      $success_msg[] = 'user Đã Xóa!';
    }else{
-      $warning_msg[] = 'User deleted already!';
+      $warning_msg[] = 'User Đã Xóa hoàn thành!';
    }
 
 }
