@@ -169,7 +169,7 @@ include 'components/save_send.php';
                 <?php
             }
          ?>
-                <input type="submit" value="send enquiry" name="send" class="btn">
+                <input type="submit" value="Gửi Yêu Cầu" name="send" class="btn">
             </form>
         </div>
         <?php

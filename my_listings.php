@@ -129,7 +129,7 @@ include 'components/save_send.php';
         <p class="address"><i class="fas fa-map-market-alt"></i><?= $fetch_listing['address']; ?></p>
         <div class="flex-btn">
             <a href="update_property.php?get_id=<?= $listing_id; ?>" class="btn">Cập Nhật</a>
-            <input type="submit" value="delete" name="delete" class="btn" onclick="return confirm('delete this listing?');">
+            <input type="submit" value="delete" name="delete" class="btn" onclick="return confirm('Xóa Tài Sản này');">
         </div>
         <a href="view_property.php?get_id=<?= $listing_id; ?>" class="btn">Xem Tài Sản</a>
     </form>

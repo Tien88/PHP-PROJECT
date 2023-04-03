@@ -433,7 +433,7 @@ include 'components/save_send.php';
                 <input type="file" name="image_05" class="input" accept="image/*">
             </div>
         </div>
-        <input type="submit" value="post property" name="post" class="btn">
+        <input type="submit" value="Đăng Tài Sản" name="post" class="btn">
     </form>
 
 </section>

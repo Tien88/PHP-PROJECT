@@ -109,7 +109,7 @@ include 'components/save_send.php';
                               <option value="70000000">7 trăm triệu</option>
                               <option value="80000000">8 trăm triệu</option>
                               <option value="90000000">9 trăm triệu</option>
-                              <option value="100000000">1 Tỷ</option>
+                              <option value="10000000000">1 Tỷ</option>
                               <option value="150000000">1,5 Tỷ</option>
                               <option value="200000000">2 Tỷ</option>
                </select>
